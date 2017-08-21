@@ -1,7 +1,0 @@
-# posedge-one xc6s-lx9 constraint
-
-NET "clk_in" LOC = P50;
-NET "rst_n" LOC = P133;
-
-NET "rxd" LOC = P105;
-NET "txd" LOC = P104;
