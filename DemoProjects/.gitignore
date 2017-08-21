@@ -1,0 +1,64 @@
+# gitignore for ISE projects
+# place this file along with "hw" folder which contains your ISE project
+
+# git ignore for ise and coregen IPs
+!hw/
+hw/*
+!hw/*.v
+!hw/*.vhdl
+!hw/*.xise
+!hw/src/
+!hw/rtl/
+!hw/ucf/
+!hw/ip/
+hw/ip/*
+!hw/ip/*.xco
+!hw/ip/*.v
+!hw/ip/*.vhdl
+!*.bit
+!*.mcs
+
+# git ignore for XPS/SDK
+# You have to call your microblaze jus as "mb" !
+!hw/mb/
+hw/mb/*
+!hw/mb/*.xmp
+!hw/mb/*.mhs
+!hw/mb/*.vhdl
+!hw/mb/*.v
+!hw/mb/*.xmp
+!hw/mb/data/
+hw/mb/data/*
+!hw/mb/data/*.ucf
+!hw/mb/etc/
+hw/mb/etc/*
+!hw/mb/etc/bitgen.ut
+!hw/mb/etc/download.cmd
+!hw/mb/etc/*.opt
+
+# BSP
+sw/.metadata/
+
+### Include elf
+!sw/sram/Debug/
+sw/sram/Debug/*
+!sw/sram/Debug/*.elf
+
+### exclude extras
+sw/sram_bsp/microblaze_0/
+*.log
+
+
+
+# application
+
+
+
+
+
+
+
+
+
+
+
