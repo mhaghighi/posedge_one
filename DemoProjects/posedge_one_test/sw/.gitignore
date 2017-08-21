@@ -1,0 +1,22 @@
+# gitignore for SDK project
+
+# directories
+.metadata/
+
+
+### exclude extras
+*.log
+
+
+
+
+
+
+
+
+
+
+
+
+
+
