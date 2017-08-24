@@ -1,0 +1,79 @@
+# UCF file for the Posedge-X1 megawing board
+
+# megawing pin [] to FPGA pin Pxx map
+# -------W2--------    -----W1.A-------     ------W1.B------
+# [GND] [IO8]  P111    [GND] [ VS ] P85     P87 [ HS ]
+# [2V5] [IO7]  P112    [2V5] [ B0 ] P83     P84 [ B1 ]
+# [3V3] [IO6]  P114    [3V3] [ G0 ] P81     P82 [ G1 ]
+# [5V0] [IO5]  P115    [5V0] [ R0 ] P79     P80 [ R1 ]
+#       [IO4]  P116          [PB1 ] P75     P78 [PB0 ] [5V0]
+#       [IO3]  P117          [PB2 ] P67     P74 [PB3 ] [3V3]
+#       [IO2]  P118          [DIP7] P59     P66 [DIP6] [2V5]
+#       [IO1]  P119          [DIP4] P57     P58 [DIP5] [GND]
+# [GND] [LED7] P120    [GND] [DIP2] P55     P56 [DIP3]
+# [2V5] [LED6] P121    [2V5] [DIP1] P48     P51 [DIP0]
+# [3V3] [LED5] P123    [3V3] [an0 ] P46     P47 [seg0]
+# [5V0] [LED4] P124    [5V0] [seg5] P44     P45 [an1 ]
+#       [LED3] P126          [an2 ] P41     P43 [seg1] [5V0]
+#       [LED2] P127          [seg4] P35     P40 [seg3] [3V3]
+#       [LED1] P131          [seg7] P33     P34 [seg2] [2V5]
+#       [LED0] P132          [seg6] P30     P32 [an3 ] [GND]
+
+
+# Clock and Reset pins
+#NET CLOCK        LOC = p50;   #24MHz on-board clock
+#NET RESET_N      LOC = p133;  #active-low USER_PB button
+
+#WING1_A
+NET "VS"          LOC = P85;   #NET W1_A01  
+NET "B[0]"        LOC = P83;   #NET W1_A02
+NET "G[0]"        LOC = P81;   #NET W1_A03
+NET "R[0]"        LOC = P79;   #NET W1_A04
+NET "PB[1]"       LOC = P75;   #NET W1_A05
+NET "PB[2]"       LOC = P67;   #NET W1_A06
+NET "DIP[7]"      LOC = P59;   #NET W1_A07
+NET "DIP[4]"      LOC = P57;   #NET W1_A08
+NET "DIP[2]"      LOC = P55;   #NET W1_A09
+NET "DIP[1]"      LOC = P48;   #NET W1_A10
+NET "AN[0]"       LOC = P46;   #NET W1_A11
+NET "SEG[5]"      LOC = P44;   #NET W1_A12
+NET "AN[2]"       LOC = P41;   #NET W1_A13
+NET "SEG[4]"      LOC = P35;   #NET W1_A14
+NET "SEG[7]"      LOC = P33;   #NET W1_A15
+NET "SEG[6]"      LOC = P30;   #NET W1_A16
+
+#WING1_B
+NET "HS"          LOC = P87;   #NET W1_B01
+NET "B[1]"        LOC = P84;   #NET W1_B02
+NET "G[1]"        LOC = P82;   #NET W1_B03
+NET "R[1]"        LOC = P80;   #NET W1_B04
+NET "PB[0]"       LOC = P78;   #NET W1_B05
+NET "PB[3]"       LOC = P74;   #NET W1_B06
+NET "DIP[6]"      LOC = P66;   #NET W1_B07
+NET "DIP[5]"      LOC = P58;   #NET W1_B08
+NET "DIP[3]"      LOC = P56;   #NET W1_B09
+NET "DIP[0]"      LOC = P51;   #NET W1_B10
+NET "SEG[0]"      LOC = P47;   #NET W1_B11
+NET "AN[1]"       LOC = P45;   #NET W1_B12
+NET "SEG[1]"      LOC = P43;   #NET W1_B13
+NET "SEG[3]"      LOC = P40;   #NET W1_B14
+NET "SEG[2]"      LOC = P34;   #NET W1_B15
+NET "AN[3]"       LOC = P32;   #NET W1_B16
+
+#WING2
+NET "IO[8]"       LOC = P111;  #NET W2_A01
+NET "IO[6]"       LOC = P112;  #NET W2_A02
+NET "IO[4]"       LOC = P114;  #NET W2_A03
+NET "IO[2]"       LOC = P115;  #NET W2_A04
+NET "IO[1]"       LOC = P116;  #NET W2_A05
+NET "IO[3]"       LOC = P117;  #NET W2_A06
+NET "IO[5]"       LOC = P118;  #NET W2_A07
+NET "IO[7]"       LOC = P119;  #NET W2_A08
+NET "LED[7]"      LOC = P120;  #NET W2_A09
+NET "LED[6]"      LOC = P121;  #NET W2_A10
+NET "LED[5]"      LOC = P123;  #NET W2_A11
+NET "LED[4]"      LOC = P124;  #NET W2_A12
+NET "LED[3]"      LOC = P126;  #NET W2_A13
+NET "LED[2]"      LOC = P127;  #NET W2_A14
+NET "LED[1]"      LOC = P131;  #NET W2_A15
+NET "LED[0]"      LOC = P132;  #NET W2_A16
