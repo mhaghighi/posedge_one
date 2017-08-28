@@ -1,0 +1,16 @@
+# gitignore for Altium Projects
+
+# generated folders
+_Previews/
+
+# intermdediate files
+*.html
+
+
+
+
+
+
+
+
+
