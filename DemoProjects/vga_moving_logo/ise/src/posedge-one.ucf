@@ -1,0 +1,29 @@
+# IO constraints for POSEDGE-ONE SPARTAN-6 LX9 board
+
+# globals
+NET "clk_i" LOC = P50;
+NET "reset_i" LOC = P133;
+
+# VGA signals (for VGA-6bit wing mounted on Wing2 9-16 connector) 
+#NET "rgb[0]" LOC = P127; #R0
+#NET "rgb[1]" LOC = P126; #R1
+#NET "rgb[2]" LOC = P124; #G0
+#NET "rgb[3]" LOC = P123; #G1
+#NET "rgb[4]" LOC = P121; #B0
+#NET "rgb[5]" LOC = P120; #B1
+#NET "hsync" LOC = P131;  #HS
+#NET "vsync" LOC = P132;  #VS
+
+# VGA signals (for VGA-12bit wing mounted on Wing2 connector) 
+NET "rgb[0]" LOC = P131; #R0
+NET "rgb[1]" LOC = P127; #R1
+NET "rgb[2]" LOC = P123; #G0
+NET "rgb[3]" LOC = P121; #G1
+NET "rgb[4]" LOC = P118; #B0
+NET "rgb[5]" LOC = P116; #B1
+NET "hsync" LOC = P112;  #HS
+NET "vsync" LOC = P114;  #VS
+
+
+
+
