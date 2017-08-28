@@ -1,0 +1,23 @@
+# IO Pin constraint for POSEDGE-ONE SPARTAN6-LX9 board
+
+NET "CLK"    LOC = "P50" | IOSTANDARD = LVCMOS33 | PERIOD = 24 MHz;
+
+# DVI-D interface - Wing C9-C16
+NET "TMDS_out_P(0)"  LOC = "P124" | IOSTANDARD = TMDS_33 ; # Blue
+NET "TMDS_out_N(0)"  LOC = "P123" | IOSTANDARD = TMDS_33 ;
+NET "TMDS_out_P(1)"  LOC = "P127" | IOSTANDARD = TMDS_33 ; # Red
+NET "TMDS_out_N(1)"  LOC = "P126" | IOSTANDARD = TMDS_33 ;
+NET "TMDS_out_P(2)"  LOC = "P132" | IOSTANDARD = TMDS_33 ; # Green
+NET "TMDS_out_N(2)"  LOC = "P131" | IOSTANDARD = TMDS_33 ;
+NET "TMDS_out_P(3)"  LOC = "P121" | IOSTANDARD = TMDS_33 ; # Clock
+NET "TMDS_out_N(3)"  LOC = "P120" | IOSTANDARD = TMDS_33 ;
+
+NET leds(0)         	LOC="P84" | IOSTANDARD=LVTTL;
+NET leds(1)         	LOC="P80" | IOSTANDARD=LVTTL; 
+
+NET btns(0)         	LOC="P87" | IOSTANDARD=LVTTL ;
+NET btns(1)         	LOC="P82" | IOSTANDARD=LVTTL ;
+NET btns(2)         	LOC="P78" | IOSTANDARD=LVTTL ;
+NET btns(3)             LOC="P66" | IOSTANDARD=LVTTL ;
+
+PIN "Inst_clkgen_24to50/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
