@@ -1,7 +1,8 @@
 # gitignore for Altium Projects
 
 # generated folders
-*_Previews/
+__Previews/
+
 
 # intermdediate files
 *.html
