@@ -1,4 +1,4 @@
-# UCF file for the Posedge-X1 megawing board
+# UCF file for the Posedge LogiX1 megawing board - Rev 1.2
 
 # megawing pin [] to FPGA pin Pxx map
 # -------W2--------    -----W1.A-------     ------W1.B------
@@ -19,10 +19,9 @@
 #       [LED1] P131          [seg7] P33     P34 [seg2] [2V5]
 #       [LED0] P132          [seg6] P30     P32 [an3 ] [GND]
 
-
 # Clock and Reset pins
-NET "CLOCK"		LOC = P50;   # 24MHz on-board clock
-NET "RESET_N"     LOC = p133;  # active-low USER_PB button
+NET "clk_i"		LOC = P50;   # 24MHz on-board clock
+NET "rst_n_i"     LOC = p133;  # active-low USER_PB button
 
 # dip-switches
 NET "dip_switch[0]" LOC = P51;
@@ -65,14 +64,14 @@ NET "sseg[6]" LOC = P30;
 NET "sseg[7]" LOC = P33;
 
 # VGA
-NET "HS"          LOC = P87;
-NET "VS"          LOC = P85;  
-NET "B[0]"        LOC = P83;
-NET "G[0]"        LOC = P81;
-NET "R[0]"        LOC = P79;
-NET "B[1]"        LOC = P84;
-NET "G[1]"        LOC = P82; 
-NET "R[1]"        LOC = P80;  
+NET "hsync"          LOC = P87;
+NET "vsync"          LOC = P85;  
+NET "rgb[0]"        LOC = P83;
+NET "rgb[1]"        LOC = P84;
+NET "rgb[2]"        LOC = P81;
+NET "rgb[3]"        LOC = P82; 
+NET "rgb[4]"        LOC = P79;
+NET "rgb[5]"        LOC = P80;  
 
 # WING 3 (Only for Rev_1.2 of Hardware)
 NET "W3_8" LOC = P111;
@@ -83,5 +82,26 @@ NET "W3_4" LOC = P116;
 NET "W3_3" LOC = P117;
 NET "W3_2" LOC = P118;
 NET "W3_1" LOC = P119;
+
+
+# MegaWing LogiX-1 Rev 1.1 specific Constraints
+#NET "leds[7]" LOC = P111;
+#NET "leds[6]" LOC = P112;
+#NET "leds[5]" LOC = P114;
+#NET "leds[4]" LOC = P115;
+#NET "leds[3]" LOC = P116;
+#NET "leds[2]" LOC = P117;
+#NET "leds[1]" LOC = P118;
+#NET "leds[0]" LOC = P119;
+
+# MegaWing LogiX-1 Rev 1.2 specific Constraints
+#NET "W3_8" LOC = P111;
+#NET "W3_7" LOC = P112;
+#NET "W3_6" LOC = P114;
+#NET "W3_5" LOC = P115;
+#NET "W3_4" LOC = P116;
+#NET "W3_3" LOC = P117;
+#NET "W3_2" LOC = P118;
+#NET "W3_1" LOC = P119;
 
 
