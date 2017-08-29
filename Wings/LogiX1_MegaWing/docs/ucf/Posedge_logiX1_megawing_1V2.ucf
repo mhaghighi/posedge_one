@@ -20,60 +20,60 @@
 #       [LED0] P132          [seg6] P30     P32 [an3 ] [GND]
 
 # Clock and Reset pins
-NET "clk_i"		LOC = P50;   # 24MHz on-board clock
-NET "rst_n_i"     LOC = p133;  # active-low USER_PB button
+NET "CLK"  		LOC = P50;   # 24MHz on-board clock
+NET "RST_N"     LOC = p133;  # active-low USER_PB button
 
 # dip-switches
-NET "dip_switch[0]" LOC = P51;
-NET "dip_switch[1]" LOC = P48;
-NET "dip_switch[2]" LOC = P55;
-NET "dip_switch[3]" LOC = P56;
-NET "dip_switch[4]" LOC = P57;
-NET "dip_switch[5]" LOC = P58;
-NET "dip_switch[6]" LOC = P66;
-NET "dip_switch[7]" LOC = P59;
+NET "DIP[0]"    LOC = P51;
+NET "DIP[1]"    LOC = P48;
+NET "DIP[2]"    LOC = P55;
+NET "DIP[3]"    LOC = P56;
+NET "DIP[4]"    LOC = P57;
+NET "DIP[5]"    LOC = P58;
+NET "DIP[6]"    LOC = P66;
+NET "DIP[7]"    LOC = P59;
 
 # Push-Buttons
-NET "push_button[0]" LOC = P78;
-NET "push_button[1]" LOC = P75;
-NET "push_button[2]" LOC = P67;
-NET "push_button[3]" LOC = P74;
+NET "PB[0]"     LOC = P78;
+NET "PB[1]"     LOC = P75;
+NET "PB[2]"     LOC = P67;
+NET "PB[3]"     LOC = P74;
 
 # LEDs
-NET "leds[7]"  LOC = P120;
-NET "leds[6]"  LOC = P121;
-NET "leds[5]"  LOC = P123;
-NET "leds[4]"  LOC = P124;
-NET "leds[3]"  LOC = P126;
-NET "leds[2]"  LOC = P127;
-NET "leds[1]"  LOC = P131;
-NET "leds[0]"  LOC = P132;
+NET "LED[7]"  LOC = P120;
+NET "LED[6]"  LOC = P121;
+NET "LED[5]"  LOC = P123;
+NET "LED[4]"  LOC = P124;
+NET "LED[3]"  LOC = P126;
+NET "LED[2]"  LOC = P127;
+NET "LED[1]"  LOC = P131;
+NET "LED[0]"  LOC = P132;
 
-# 7segment
-NET "an[0]" LOC = P46;
-NET "an[1]" LOC = P45;
-NET "an[2]" LOC = P41;
-NET "an[3]" LOC = P32;
-NET "sseg[0]" LOC = P47;
-NET "sseg[1]" LOC = P43;
-NET "sseg[2]" LOC = P34;
-NET "sseg[3]" LOC = P40;
-NET "sseg[4]" LOC = P35;
-NET "sseg[5]" LOC = P44;
-NET "sseg[6]" LOC = P30;
-NET "sseg[7]" LOC = P33;
+# 7-segment
+NET "an[0]"     LOC = P46;
+NET "an[1]"     LOC = P45;
+NET "an[2]"     LOC = P41;
+NET "an[3]"     LOC = P32;
+NET "sseg[0]"   LOC = P47;
+NET "sseg[1]"   LOC = P43;
+NET "sseg[2]"   LOC = P34;
+NET "sseg[3]"   LOC = P40;
+NET "sseg[4]"   LOC = P35;
+NET "sseg[5]"   LOC = P44;
+NET "sseg[6]"   LOC = P30;
+NET "sseg[7]"   LOC = P33;
 
 # VGA
-NET "hsync"          LOC = P87;
-NET "vsync"          LOC = P85;  
-NET "rgb[0]"        LOC = P83;
-NET "rgb[1]"        LOC = P84;
-NET "rgb[2]"        LOC = P81;
-NET "rgb[3]"        LOC = P82; 
-NET "rgb[4]"        LOC = P79;
-NET "rgb[5]"        LOC = P80;  
+NET "HS"        LOC = P87;
+NET "VS"        LOC = P85;  
+NET "R[0]"      LOC = P79;
+NET "R[1]"      LOC = P80;  
+NET "G[0]"      LOC = P81;
+NET "G[1]"      LOC = P82; 
+NET "B[0]"      LOC = P83;
+NET "B[1]"      LOC = P84;
 
-# WING 3 (Only for Rev_1.2 of Hardware)
+# WING 3
 NET "W3_8" LOC = P111;
 NET "W3_7" LOC = P112;
 NET "W3_6" LOC = P114;
@@ -82,26 +82,3 @@ NET "W3_4" LOC = P116;
 NET "W3_3" LOC = P117;
 NET "W3_2" LOC = P118;
 NET "W3_1" LOC = P119;
-
-
-# MegaWing LogiX-1 Rev 1.1 specific Constraints
-#NET "leds[7]" LOC = P111;
-#NET "leds[6]" LOC = P112;
-#NET "leds[5]" LOC = P114;
-#NET "leds[4]" LOC = P115;
-#NET "leds[3]" LOC = P116;
-#NET "leds[2]" LOC = P117;
-#NET "leds[1]" LOC = P118;
-#NET "leds[0]" LOC = P119;
-
-# MegaWing LogiX-1 Rev 1.2 specific Constraints
-#NET "W3_8" LOC = P111;
-#NET "W3_7" LOC = P112;
-#NET "W3_6" LOC = P114;
-#NET "W3_5" LOC = P115;
-#NET "W3_4" LOC = P116;
-#NET "W3_3" LOC = P117;
-#NET "W3_2" LOC = P118;
-#NET "W3_1" LOC = P119;
-
-

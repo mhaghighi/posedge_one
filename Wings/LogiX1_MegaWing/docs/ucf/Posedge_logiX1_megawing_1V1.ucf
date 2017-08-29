@@ -1,0 +1,84 @@
+# UCF file for the Posedge LogiX1 megawing board - Rev 1.1
+
+# megawing pin [] to FPGA pin Pxx map
+# -------W2--------    -----W1.A-------     ------W1.B------
+# [GND] [LED7] P111    [GND] [ VS ] P85     P87 [ HS ]
+# [2V5] [LED6] P112    [2V5] [ B0 ] P83     P84 [ B1 ]
+# [3V3] [LED5] P114    [3V3] [ G0 ] P81     P82 [ G1 ]
+# [5V0] [LED4] P115    [5V0] [ R0 ] P79     P80 [ R1 ]
+#       [LED3] P116          [PB1 ] P75     P78 [PB0 ] [5V0]
+#       [LED2] P117          [PB2 ] P67     P74 [PB3 ] [3V3]
+#       [LED1] P118          [DIP7] P59     P66 [DIP6] [2V5]
+#       [LED0] P119          [DIP4] P57     P58 [DIP5] [GND]
+# [GND] [IO7 ] P120    [GND] [DIP2] P55     P56 [DIP3]
+# [2V5] [IO5 ] P121    [2V5] [DIP1] P48     P51 [DIP0]
+# [3V3] [IO3 ] P123    [3V3] [an0 ] P46     P47 [seg0]
+# [5V0] [IO1 ] P124    [5V0] [seg5] P44     P45 [an1 ]
+#       [IO0 ] P126          [an2 ] P41     P43 [seg1] [5V0]
+#       [IO2 ] P127          [seg4] P35     P40 [seg3] [3V3]
+#       [IO4 ] P131          [seg7] P33     P34 [seg2] [2V5]
+#       [IO6 ] P132          [seg6] P30     P32 [an3 ] [GND]
+
+# Clock and Reset pins
+NET "CLK"  		LOC = P50;   # 24MHz on-board clock
+NET "RST_N"     LOC = p133;  # active-low USER_PB button
+
+# dip-switches
+NET "DIP[0]"    LOC = P51;
+NET "DIP[1]"    LOC = P48;
+NET "DIP[2]"    LOC = P55;
+NET "DIP[3]"    LOC = P56;
+NET "DIP[4]"    LOC = P57;
+NET "DIP[5]"    LOC = P58;
+NET "DIP[6]"    LOC = P66;
+NET "DIP[7]"    LOC = P59;
+
+# Push-Buttons
+NET "PB[0]"     LOC = P78;
+NET "PB[1]"     LOC = P75;
+NET "PB[2]"     LOC = P67;
+NET "PB[3]"     LOC = P74;
+
+# LEDs
+NET "LED[7]"    LOC = P111;
+NET "LED[6]"    LOC = P112;
+NET "LED[5]"    LOC = P114;
+NET "LED[4]"    LOC = P115;
+NET "LED[3]"    LOC = P116;
+NET "LED[2]"    LOC = P117;
+NET "LED[1]"    LOC = P118;
+NET "LED[0]"    LOC = P119;
+
+# 7-segment
+NET "an[0]"     LOC = P46;
+NET "an[1]"     LOC = P45;
+NET "an[2]"     LOC = P41;
+NET "an[3]"     LOC = P32;
+NET "sseg[0]"   LOC = P47;
+NET "sseg[1]"   LOC = P43;
+NET "sseg[2]"   LOC = P34;
+NET "sseg[3]"   LOC = P40;
+NET "sseg[4]"   LOC = P35;
+NET "sseg[5]"   LOC = P44;
+NET "sseg[6]"   LOC = P30;
+NET "sseg[7]"   LOC = P33;
+
+# VGA
+NET "HS"        LOC = P87;
+NET "VS"        LOC = P85;  
+NET "R[0]"      LOC = P79;
+NET "R[1]"      LOC = P80;  
+NET "G[0]"      LOC = P81;
+NET "G[1]"      LOC = P82; 
+NET "B[0]"      LOC = P83;
+NET "B[1]"      LOC = P84;
+
+# GPIO Header
+NET "IO[0]"     LOC = P126;
+NET "IO[1]"     LOC = P124;
+NET "IO[2]"     LOC = P127;
+NET "IO[3]"     LOC = P123;
+NET "IO[4]"     LOC = P131;
+NET "IO[5]"     LOC = P121;
+NET "IO[6]"     LOC = P132;
+NET "IO[7]"     LOC = P120;
