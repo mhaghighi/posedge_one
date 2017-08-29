@@ -1,0 +1,30 @@
+NET clk_i LOC = "P50";
+
+NET rst_n_i LOC = "P133";
+
+NET mosi  LOC = "P111";
+NET miso  LOC = "P112";
+NET sck   LOC = "P114";
+NET ss    LOC = "P115";
+
+NET "an[0]" LOC = "P46";
+NET "an[1]" LOC = "P45";
+NET "an[2]" LOC = "P41";
+NET "an[3]" LOC = "P32";
+
+NET "sseg[0]" LOC = "P47";
+NET "sseg[1]" LOC = "P43";
+NET "sseg[2]" LOC = "P34";
+NET "sseg[3]" LOC = "P40";
+NET "sseg[4]" LOC = "P35";
+NET "sseg[5]" LOC = "P44";
+NET "sseg[6]" LOC = "P30";
+NET "sseg[7]" LOC = "P33";
+
+NET "channel_address[0]" LOC = "P51";
+NET "channel_address[1]" LOC = "P48";
+NET "channel_address[2]" LOC = "P55";
+
+NET "led[0]" LOC = "P132";
+NET "led[1]" LOC = "P131";
+NET "led[2]" LOC = "P127";

@@ -1,0 +1,49 @@
+# gitignore for ISE projects
+
+# project-exclusives
+ip/clk_gen/clk_gen/
+
+# exclude bit file
+!build
+build/*
+!build/*.bit
+!build/*.mcs
+
+
+# exclude
+# Core Generator generated files
+
+# project-wide generated files
+*.gise
+par_usage_statistics.html
+usage_statistics_webtalk.html
+webtalk.log
+webtalk_pn.xml
+
+# generated folders
+iseconfig/
+xlnx_auto_0_xdb/
+xst/
+_ngo/
+_xmsgs/
+tmp/
+
+# intermdediate files
+*.asy
+*.gise
+*.ncf
+*.txt
+*.cgp
+*.tcl
+*.html
+*.ini
+*.log
+
+
+
+
+
+
+
+
+
