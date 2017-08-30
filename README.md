@@ -1,4 +1,4 @@
-# This is the repository for Posedge-One SPARTAN-6 FPGA development board
+# Posedge-One SPARTAN-6 FPGA development board 
 
 Posedge-One is an FPGA development board built around Xilinx SPARTAN-6 LX9 FPGA.
 
