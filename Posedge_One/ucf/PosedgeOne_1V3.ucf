@@ -1,0 +1,130 @@
+# UCF file for the Posedge-One board
+
+# Main board wing pin [] to FPGA pin Pxx map
+# -------W2-------    ------W1.A-----     ------W1.B------
+# [GND] [A01] P111    [GND] [A01] P85     P87 [B01]
+# [2V5] [A02] P112    [2V5] [A02] P83     P84 [B02]
+# [3V3] [A03] P114    [3V3] [A03] P81     P82 [B03]
+# [5V0] [A04] P115    [5V0] [A04] P79     P80 [B04]
+#       [A05] P116          [A05] P75     P78 [B05] [5V0]
+#       [A06] P117          [A06] P67     P74 [B06] [3V3]
+#       [A07] P118          [A07] P59     P66 [B07] [2V5]
+#       [A08] P119          [A08] P57     P58 [B08] [GND]
+# [GND] [A09] P120    [GND] [A09] P55     P56 [B09]
+# [2V5] [A10] P121    [2V5] [A10] P48     P51 [B10]
+# [3V3] [A11] P123    [3V3] [A11] P46     P47 [B11]
+# [5V0] [A12] P124    [5V0] [A12] P44     P45 [B12]
+#       [A13] P126          [A13] P41     P43 [B13] [5V0]
+#       [A14] P127          [A14] P35     P40 [B14] [3V3]
+#       [A15] P131          [A15] P33     P34 [B15] [2V5]
+#       [A16] P132          [A16] P30     P32 [B16] [GND]
+
+
+# Clock and Reset pins
+NET CLOCK             LOC = p50;   # 24MHz on-board clock
+NET RESET_N           LOC = p133;  # active-low USER_PB button
+
+# GPIO pins
+NET W1_A01            LOC = P85;
+NET W1_A02            LOC = P83;
+NET W1_A03            LOC = P81;
+NET W1_A04            LOC = P79;
+NET W1_A05            LOC = P75;
+NET W1_A06            LOC = P67;
+NET W1_A07            LOC = P59;
+NET W1_A08            LOC = P57;
+NET W1_A09            LOC = P55;
+NET W1_A10            LOC = P48;
+NET W1_A11            LOC = P46;
+NET W1_A12            LOC = P44;
+NET W1_A13            LOC = P41;
+NET W1_A14            LOC = P35;
+NET W1_A15            LOC = P33;
+NET W1_A16            LOC = P30;
+NET W1_B01            LOC = P87;
+NET W1_B02            LOC = P84;
+NET W1_B03            LOC = P82;
+NET W1_B04            LOC = P80;
+NET W1_B05            LOC = P78;
+NET W1_B06            LOC = P74;
+NET W1_B07            LOC = P66;
+NET W1_B08            LOC = P58;
+NET W1_B09            LOC = P56;
+NET W1_B10            LOC = P51;
+NET W1_B11            LOC = P47;
+NET W1_B12            LOC = P45;
+NET W1_B13            LOC = P43;
+NET W1_B14            LOC = P40;
+NET W1_B15            LOC = P34;
+NET W1_B16            LOC = P32;
+NET W2_A01            LOC = P111;
+NET W2_A02            LOC = P112;
+NET W2_A03            LOC = P114;
+NET W2_A04            LOC = P115;
+NET W2_A05            LOC = P116;
+NET W2_A06            LOC = P117;
+NET W2_A07            LOC = P118;
+NET W2_A08            LOC = P119;
+NET W2_A09            LOC = P120;
+NET W2_A10            LOC = P121;
+NET W2_A11            LOC = P123;
+NET W2_A12            LOC = P124;
+NET W2_A13            LOC = P126;
+NET W2_A14            LOC = P127;
+NET W2_A15            LOC = P131;
+NET W2_A16            LOC = P132;
+
+# USB<->UART Pins
+NET UART_TX           LOC = p104;  
+NET UART_RX           LOC = p105;
+
+# USER LED (Availabe from Rev 1.3)
+NET "USER_LED"		  LOC = p88;
+
+# USB<->ASYNC_FIFO Pins
+NET FT_RXF_N          LOC = p95;
+NET FT_TXE_N          LOC = p94;
+NET FT_RD_N           LOC = p93;
+NET FT_WR_N           LOC = p92;
+NET FT_D0             LOC = p105;
+NET FT_D1             LOC = p104;
+NET FT_D2             LOC = p102;
+NET FT_D3             LOC = p101;
+NET FT_D4             LOC = p100;
+NET FT_D5             LOC = p99;
+NET FT_D6             LOC = p98;
+NET FT_D7             LOC = p97;
+
+# SRAM Pins             
+NET SRAM_WE_N         LOC = p22;
+NET SRAM_OE_N         LOC = p140;
+NET SRAM_CE_N         LOC = p14;
+NET SRAM_DATA<0>      LOC = p15;
+NET SRAM_DATA<1>      LOC = p16;
+NET SRAM_DATA<2>      LOC = p17;
+NET SRAM_DATA<3>      LOC = p21;
+NET SRAM_DATA<4>      LOC = p144;
+NET SRAM_DATA<5>      LOC = p143;
+NET SRAM_DATA<6>      LOC = p142;
+NET SRAM_DATA<7>      LOC = p141;
+NET SRAM_ADDR<0>      LOC = p8;
+NET SRAM_ADDR<1>      LOC = p9;
+NET SRAM_ADDR<2>      LOC = p10;
+NET SRAM_ADDR<3>      LOC = p11;
+NET SRAM_ADDR<4>      LOC = p12;
+NET SRAM_ADDR<5>      LOC = p23;
+NET SRAM_ADDR<6>      LOC = p24;
+NET SRAM_ADDR<7>      LOC = p26;
+NET SRAM_ADDR<8>      LOC = p27;
+NET SRAM_ADDR<9>      LOC = p29;
+NET SRAM_ADDR<10>     LOC = p7;
+NET SRAM_ADDR<11>     LOC = p6;
+NET SRAM_ADDR<12>     LOC = p5;
+NET SRAM_ADDR<13>     LOC = p2;
+NET SRAM_ADDR<14>     LOC = p1;
+NET SRAM_ADDR<15>     LOC = p139;
+NET SRAM_ADDR<16>     LOC = p138;
+NET SRAM_ADDR<17>     LOC = p137;
+NET SRAM_ADDR<18>     LOC = p134;
+
+
