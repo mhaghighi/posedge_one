@@ -1,0 +1,27 @@
+# git ignore for XPS/SDK 
+# put this file inside the microblaze folder
+
+*
+!*.xmp
+!*.mhs
+!*.vhdl
+!*.v
+!data/
+data/*
+!data/*.ucf
+!etc/
+/etc/*
+!/etc/bitgen.ut
+!/etc/download.cmd
+!/etc/*.opt
+!*.gitignore
+
+
+
+
+
+
+
+
+
+
