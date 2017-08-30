@@ -4,7 +4,7 @@
 ipcore_dir/char_fifo/char_fifo/
 ipcore_dir/clk_core/clk_gen/
 # exclude bit file
-!build
+!build/
 build/*
 !build/*.bit
 !build/*.mcs
