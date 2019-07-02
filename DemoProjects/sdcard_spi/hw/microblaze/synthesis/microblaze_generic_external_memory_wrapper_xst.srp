@@ -1,0 +1,2214 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Users\Mahdi\Desktop\sd_new_spi\hw\microblaze\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "microblaze_generic_external_memory_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Users\Mahdi\Desktop\sd_new_spi\hw\microblaze\pcores\" "D:\edk_ip\myrepo\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx9tqg144-2
+Output File Name                   : "../implementation/microblaze_generic_external_memory_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : microblaze_generic_external_memory_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/ipic_if.vhd" into library emc_common_v5_03_b
+Parsing entity <ipic_if>.
+Parsing architecture <imp> of entity <ipic_if>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/io_registers.vhd" into library emc_common_v5_03_b
+Parsing entity <io_registers>.
+Parsing architecture <imp> of entity <io_registers>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/counters.vhd" into library emc_common_v5_03_b
+Parsing entity <counters>.
+Parsing architecture <imp> of entity <counters>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_state_machine.vhd" into library emc_common_v5_03_b
+Parsing entity <mem_state_machine>.
+Parsing architecture <imp> of entity <mem_state_machine>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/select_param.vhd" into library emc_common_v5_03_b
+Parsing entity <select_param>.
+Parsing architecture <IMP> of entity <select_param>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/addr_counter_mux.vhd" into library emc_common_v5_03_b
+Parsing entity <addr_counter_mux>.
+Parsing architecture <imp> of entity <addr_counter_mux>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_steer.vhd" into library emc_common_v5_03_b
+Parsing entity <mem_steer>.
+Parsing architecture <imp> of entity <mem_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/emc.vhd" into library emc_common_v5_03_b
+Parsing entity <EMC>.
+Parsing architecture <IMP> of entity <emc>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_addr_gen.vhd" into library axi_emc_v1_03_b
+Parsing entity <axi_emc_addr_gen>.
+Parsing architecture <imp> of entity <axi_emc_addr_gen>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_address_decode.vhd" into library axi_emc_v1_03_b
+Parsing entity <axi_emc_address_decode>.
+Parsing architecture <imp> of entity <axi_emc_address_decode>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" into library axi_emc_v1_03_b
+Parsing entity <axi_emc_native_interface>.
+Parsing architecture <imp> of entity <axi_emc_native_interface>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" into library axi_emc_v1_03_b
+Parsing entity <axi_emc>.
+Parsing architecture <implementation> of entity <axi_emc>.
+Parsing VHDL file "C:\Users\Mahdi\Desktop\sd_new_spi\hw\microblaze\hdl\microblaze_generic_external_memory_wrapper.vhd" into library work
+Parsing entity <microblaze_generic_external_memory_wrapper>.
+Parsing architecture <STRUCTURE> of entity <microblaze_generic_external_memory_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <microblaze_generic_external_memory_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_emc> (architecture <implementation>) with generics from library <axi_emc_v1_03_b>.
+WARNING:HDLCompiler:871 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 941: Using initial value "0000000001000000" for temp_prog_cmd_data since it is never assigned
+
+Elaborating entity <axi_emc_native_interface> (architecture <imp>) with generics from library <axi_emc_v1_03_b>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" Line 659: Assignment to second_last_cnt ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" Line 667: Assignment to addr_sm_ps_wr_cmb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" Line 668: Assignment to addr_sm_ps_wr_wait_cmb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" Line 671: Assignment to wr_addr_transaction ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" Line 820: Assignment to last_rd_data_reg ignored, since the identifier is never used
+
+Elaborating entity <axi_emc_addr_gen> (architecture <imp>) with generics from library <axi_emc_v1_03_b>.
+
+Elaborating entity <axi_emc_address_decode> (architecture <imp>) with generics from library <axi_emc_v1_03_b>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_address_decode.vhd" Line 471: Assignment to ored_ce_int ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" Line 1162: Assignment to rd_fifo_empty ignored, since the identifier is never used
+
+Elaborating entity <srl_fifo_rbu_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <cntr_incr_decr_addn_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" Line 161: <muxcy_l> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" Line 171: <xorcy> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" Line 180: <fds> remains a black-box since it has no binding entity.
+
+Elaborating entity <dynshreg_f> (architecture <behavioral>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <counter_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" Line 1221: Assignment to no_space_in_fifo ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 2528: Assignment to or_reduced_rdce_d1 ignored, since the identifier is never used
+
+Elaborating entity <EMC> (architecture <IMP>) with generics from library <emc_common_v5_03_b>.
+
+Elaborating entity <ipic_if> (architecture <imp>) with generics from library <emc_common_v5_03_b>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/ipic_if.vhd" Line 324: Assignment to bus2ip_mem_cs_reg ignored, since the identifier is never used
+
+Elaborating entity <ld_arith_reg> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" Line 166: <mult_and> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" Line 173: <muxcy> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" Line 181: <xorcy> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" Line 188: <fdre> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/ipic_if.vhd" Line 436: Assignment to clear_pend_wrreq ignored, since the identifier is never used
+
+Elaborating entity <mem_state_machine> (architecture <imp>) from library <emc_common_v5_03_b>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_state_machine.vhd" Line 1809: Assignment to mem_cen_reg ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_state_machine.vhd" Line 1850: Assignment to addr_cnt_ce_reg ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_state_machine.vhd" Line 1897: Assignment to bus2ip_rdreq_d2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_state_machine.vhd" Line 1946: Assignment to last_addr1_d3 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_state_machine.vhd" Line 328: Net <addressData_strobe_cmb> does not have a driver.
+
+Elaborating entity <addr_counter_mux> (architecture <imp>) with generics from library <emc_common_v5_03_b>.
+WARNING:HDLCompiler:92 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/addr_counter_mux.vhd" Line 623: cre_reg_en should be on the sensitivity list of the process
+
+Elaborating entity <ld_arith_reg> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <counters> (architecture <imp>) from library <emc_common_v5_03_b>.
+
+Elaborating entity <ld_arith_reg> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" Line 198: <fdse> remains a black-box since it has no binding entity.
+
+Elaborating entity <ld_arith_reg> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <ld_arith_reg> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <select_param> (architecture <IMP>) with generics from library <emc_common_v5_03_b>.
+
+Elaborating entity <mem_steer> (architecture <imp>) with generics from library <emc_common_v5_03_b>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_steer.vhd" Line 874: Assignment to addr_align_read ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_steer.vhd" Line 358: Net <write_data_parity_cmb[0]> does not have a driver.
+
+Elaborating entity <io_registers> (architecture <imp>) with generics from library <emc_common_v5_03_b>.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 768: Net <psram_page_mode> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 912: Net <Cre_reg_en> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 915: Net <Linear_flash_brst_rd_flag> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 916: Net <Linear_flash_rd_data_ack> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 917: Net <Mem_WAIT_reg> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 933: Net <ADDR_PROGRAM[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 934: Net <ADDR_SYNCH_BURST_RD[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" Line 935: Net <Addr_select> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <microblaze_generic_external_memory_wrapper>.
+    Related source file is "C:\Users\Mahdi\Desktop\sd_new_spi\hw\microblaze\hdl\microblaze_generic_external_memory_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <microblaze_generic_external_memory_wrapper> synthesized.
+
+Synthesizing Unit <axi_emc>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_FAMILY = "spartan6"
+        C_INSTANCE = "Generic_External_Memory"
+        C_AXI_CLK_PERIOD_PS = 10000
+        C_LFLASH_PERIOD_PS = 20000
+        C_LINEAR_FLASH_SYNC_BURST = 0
+        C_S_AXI_REG_ADDR_WIDTH = 5
+        C_S_AXI_REG_DATA_WIDTH = 32
+        C_S_AXI_EN_REG = 0
+        C_S_AXI_MEM_ADDR_WIDTH = 32
+        C_S_AXI_MEM_DATA_WIDTH = 32
+        C_S_AXI_MEM_ID_WIDTH = 1
+        C_S_AXI_MEM0_BASEADDR = "01000001001010000000000000000000"
+        C_S_AXI_MEM0_HIGHADDR = "01000001001011111111111111111111"
+        C_S_AXI_MEM1_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_MEM1_HIGHADDR = "00000000000000000000000000000000"
+        C_S_AXI_MEM2_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_MEM2_HIGHADDR = "00000000000000000000000000000000"
+        C_S_AXI_MEM3_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_MEM3_HIGHADDR = "00000000000000000000000000000000"
+        C_INCLUDE_NEGEDGE_IOREGS = 0
+        C_NUM_BANKS_MEM = 1
+        C_MEM0_TYPE = 2
+        C_MEM1_TYPE = 0
+        C_MEM2_TYPE = 0
+        C_MEM3_TYPE = 0
+        C_MEM0_WIDTH = 8
+        C_MEM1_WIDTH = 32
+        C_MEM2_WIDTH = 32
+        C_MEM3_WIDTH = 32
+        C_MAX_MEM_WIDTH = 8
+        C_PARITY_TYPE_MEM_0 = 0
+        C_PARITY_TYPE_MEM_1 = 0
+        C_PARITY_TYPE_MEM_2 = 0
+        C_PARITY_TYPE_MEM_3 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_0 = 1
+        C_INCLUDE_DATAWIDTH_MATCHING_1 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_2 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_3 = 0
+        C_SYNCH_PIPEDELAY_0 = 2
+        C_TCEDV_PS_MEM_0 = 15000
+        C_TAVDV_PS_MEM_0 = 15000
+        C_TPACC_PS_FLASH_0 = 25000
+        C_THZCE_PS_MEM_0 = 7000
+        C_THZOE_PS_MEM_0 = 7000
+        C_TWC_PS_MEM_0 = 15000
+        C_TWP_PS_MEM_0 = 12000
+        C_TWPH_PS_MEM_0 = 12000
+        C_TLZWE_PS_MEM_0 = 0
+        C_WR_REC_TIME_MEM_0 = 100000
+        C_SYNCH_PIPEDELAY_1 = 2
+        C_TCEDV_PS_MEM_1 = 15000
+        C_TAVDV_PS_MEM_1 = 15000
+        C_TPACC_PS_FLASH_1 = 25000
+        C_THZCE_PS_MEM_1 = 7000
+        C_THZOE_PS_MEM_1 = 7000
+        C_TWC_PS_MEM_1 = 15000
+        C_TWP_PS_MEM_1 = 12000
+        C_TWPH_PS_MEM_1 = 12000
+        C_TLZWE_PS_MEM_1 = 0
+        C_WR_REC_TIME_MEM_1 = 100000
+        C_SYNCH_PIPEDELAY_2 = 2
+        C_TCEDV_PS_MEM_2 = 15000
+        C_TAVDV_PS_MEM_2 = 15000
+        C_TPACC_PS_FLASH_2 = 25000
+        C_THZCE_PS_MEM_2 = 7000
+        C_THZOE_PS_MEM_2 = 7000
+        C_TWC_PS_MEM_2 = 15000
+        C_TWP_PS_MEM_2 = 12000
+        C_TWPH_PS_MEM_2 = 12000
+        C_TLZWE_PS_MEM_2 = 0
+        C_WR_REC_TIME_MEM_2 = 100000
+        C_SYNCH_PIPEDELAY_3 = 2
+        C_TCEDV_PS_MEM_3 = 15000
+        C_TAVDV_PS_MEM_3 = 15000
+        C_TPACC_PS_FLASH_3 = 25000
+        C_THZCE_PS_MEM_3 = 7000
+        C_THZOE_PS_MEM_3 = 7000
+        C_TWC_PS_MEM_3 = 15000
+        C_TWP_PS_MEM_3 = 12000
+        C_TWPH_PS_MEM_3 = 12000
+        C_TLZWE_PS_MEM_3 = 0
+        C_WR_REC_TIME_MEM_3 = 100000
+    Set property "IOB = TRUE" for signal <Mem_DQ_I>.
+    Set property "IOB = TRUE" for signal <Mem_DQ_O>.
+    Set property "equivalent_register_removal = no" for signal <Mem_DQ_T>.
+    Set property "IOB = TRUE" for signal <Mem_DQ_T>.
+    Set property "IOB = TRUE" for signal <MEM_DQ_PARITY_I>.
+    Set property "IOB = TRUE" for signal <MEM_DQ_PARITY_O>.
+    Set property "equivalent_register_removal = no" for signal <MEM_DQ_PARITY_T>.
+    Set property "IOB = TRUE" for signal <MEM_DQ_PARITY_T>.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <RdClk>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <S_AXI_REG_AWADDR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_WDATA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_ARADDR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Mem_WAIT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_AWVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_WVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_BREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_ARVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_REG_RREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" line 2428: Output port <axi_sm_ns_IDLE> of the instance <AXI_EMC_NATIVE_INTERFACE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" line 2704: Output port <parity_error_adrss> of the instance <EMC_CTRL_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" line 2704: Output port <parity_error_mem> of the instance <EMC_CTRL_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" line 2704: Output port <IP2Bus_retry> of the instance <EMC_CTRL_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc.vhd" line 2704: Output port <IP2Bus_toutSup> of the instance <EMC_CTRL_I> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <ADDR_PROGRAM> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ADDR_SYNCH_BURST_RD> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <psram_page_mode> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:2935 - Signal 'Cre_reg_en', unconnected in block 'axi_emc', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'Linear_flash_brst_rd_flag', unconnected in block 'axi_emc', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'Linear_flash_rd_data_ack', unconnected in block 'axi_emc', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'Mem_WAIT_reg', unconnected in block 'axi_emc', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'Addr_select', unconnected in block 'axi_emc', is tied to its initial value (0).
+    Found 1-bit register for signal <bus2ip_reset>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <axi_emc> synthesized.
+
+Synthesizing Unit <axi_emc_native_interface>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd".
+        C_FAMILY = "spartan6"
+        C_S_AXI_MEM_ADDR_WIDTH = 32
+        C_S_AXI_MEM_DATA_WIDTH = 32
+        C_S_AXI_MEM_ID_WIDTH = 1
+        C_S_AXI_MEM0_BASEADDR = "01000001001010000000000000000000"
+        C_S_AXI_MEM0_HIGHADDR = "01000001001011111111111111111111"
+        C_S_AXI_MEM1_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_MEM1_HIGHADDR = "00000000000000000000000000000000"
+        C_S_AXI_MEM2_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_MEM2_HIGHADDR = "00000000000000000000000000000000"
+        C_S_AXI_MEM3_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_MEM3_HIGHADDR = "00000000000000000000000000000000"
+        AXI_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000001001010000000000000000000","0000000000000000000000000000000001000001001011111111111111111111")
+        AXI_ARD_NUM_CE_ARRAY = (1)
+        C_NUM_BANKS_MEM = 1
+WARNING:Xst:647 - Input <S_AXI_MEM_AWSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_AWCACHE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_AWPROT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_ARSIZE<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_ARCACHE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_ARPROT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_AWLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_WLAST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_MEM_ARLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" line 1169: Output port <Addr> of the instance <OLD_LOGIC_GEN.RDATA_FIFO_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" line 1169: Output port <Underflow> of the instance <OLD_LOGIC_GEN.RDATA_FIFO_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" line 1169: Output port <Overflow> of the instance <OLD_LOGIC_GEN.RDATA_FIFO_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_native_interface.vhd" line 1202: Output port <Carry_Out> of the instance <OLD_LOGIC_GEN.UPDN_COUNTER_I> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <s_axi_mem_rid_reg>.
+    Found 1-bit register for signal <s_axi_mem_bid_reg>.
+    Found 2-bit register for signal <s_axi_mem_bresp_reg>.
+    Found 1-bit register for signal <s_axi_mem_bvalid_reg>.
+    Found 32-bit register for signal <bus2ip_data_reg>.
+    Found 4-bit register for signal <bus2ip_BE_reg>.
+    Found 1-bit register for signal <bus2ip_burst_reg>.
+    Found 8-bit register for signal <burstlength_reg>.
+    Found 2-bit register for signal <axi_trans_size_reg>.
+    Found 8-bit register for signal <burst_data_cnt>.
+    Found 1-bit register for signal <last_data_acked>.
+    Found 8-bit register for signal <burst_addr_cnt>.
+    Found 4-bit register for signal <derived_len_reg>.
+    Found 3-bit register for signal <emc_addr_ps>.
+    Found 1-bit register for signal <addr_sm_ps_IDLE_reg>.
+    Found 1-bit register for signal <rnw_reg>.
+    Found 1-bit register for signal <bus2ip_wr_req_reg>.
+    Found 1-bit register for signal <bus2ip_rd_req_reg>.
+    Found 1-bit register for signal <type_of_xfer_reg>.
+    Found 2-bit register for signal <derived_size_reg>.
+    Found 2-bit register for signal <derived_burst_reg>.
+    Found 1-bit register for signal <rw_flag_reg>.
+    Found 1-bit register for signal <RdFIFO_Space_two_int>.
+    Found 8-bit register for signal <rd_data_count>.
+    Found 1-bit register for signal <active_high_rst>.
+INFO:Xst:1799 - State wr_resp is never reached in FSM <emc_addr_ps>.
+    Found finite state machine <FSM_0> for signal <emc_addr_ps>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 35                                             |
+    | Inputs             | 17                                             |
+    | Outputs            | 6                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | S_AXI_ARESETN_INV_13_o (positive)              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit subtractor for signal <GND_14_o_GND_14_o_sub_39_OUT<7:0>> created at line 711.
+    Found 8-bit subtractor for signal <GND_14_o_GND_14_o_sub_45_OUT<7:0>> created at line 743.
+    Found 8-bit subtractor for signal <GND_14_o_GND_14_o_sub_91_OUT<7:0>> created at line 1259.
+    Found 4-bit 3-to-1 multiplexer for signal <size_cmb[1]_burst_length_cmb[3]_wide_mux_50_OUT> created at line 778.
+    Found 4-bit 3-to-1 multiplexer for signal <derived_size_reg[1]_PWR_14_o_wide_mux_96_OUT> created at line 1329.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  93 D-type flip-flop(s).
+	inferred  38 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <axi_emc_native_interface> synthesized.
+
+Synthesizing Unit <axi_emc_addr_gen>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_addr_gen.vhd".
+        C_S_AXI_MEM_ADDR_WIDTH = 32
+        C_S_AXI_MEM_DATA_WIDTH = 32
+WARNING:Xst:647 - Input <Rst_Rd_CE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <bus2ip_addr_i<31>>.
+    Found 1-bit register for signal <bus2ip_addr_i<30>>.
+    Found 1-bit register for signal <bus2ip_addr_i<29>>.
+    Found 1-bit register for signal <bus2ip_addr_i<28>>.
+    Found 1-bit register for signal <bus2ip_addr_i<27>>.
+    Found 1-bit register for signal <bus2ip_addr_i<26>>.
+    Found 1-bit register for signal <bus2ip_addr_i<25>>.
+    Found 1-bit register for signal <bus2ip_addr_i<24>>.
+    Found 1-bit register for signal <bus2ip_addr_i<23>>.
+    Found 1-bit register for signal <bus2ip_addr_i<22>>.
+    Found 1-bit register for signal <bus2ip_addr_i<21>>.
+    Found 1-bit register for signal <bus2ip_addr_i<20>>.
+    Found 1-bit register for signal <bus2ip_addr_i<19>>.
+    Found 1-bit register for signal <bus2ip_addr_i<18>>.
+    Found 1-bit register for signal <bus2ip_addr_i<17>>.
+    Found 1-bit register for signal <bus2ip_addr_i<16>>.
+    Found 1-bit register for signal <bus2ip_addr_i<15>>.
+    Found 1-bit register for signal <bus2ip_addr_i<14>>.
+    Found 1-bit register for signal <bus2ip_addr_i<13>>.
+    Found 1-bit register for signal <bus2ip_addr_i<12>>.
+    Found 3-bit register for signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.internal_count>.
+    Found 1-bit register for signal <bus2ip_addr_i<2>>.
+    Found 1-bit register for signal <bus2ip_addr_i<3>>.
+    Found 1-bit register for signal <bus2ip_addr_i<4>>.
+    Found 1-bit register for signal <bus2ip_addr_i<5>>.
+    Found 1-bit register for signal <bus2ip_addr_i<11>>.
+    Found 1-bit register for signal <bus2ip_addr_i<10>>.
+    Found 1-bit register for signal <bus2ip_addr_i<9>>.
+    Found 1-bit register for signal <bus2ip_addr_i<8>>.
+    Found 1-bit register for signal <bus2ip_addr_i<7>>.
+    Found 1-bit register for signal <bus2ip_addr_i<6>>.
+    Found 3-bit adder for signal <n0174> created at line 282.
+    Found 3-bit adder for signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.internal_count[2]_GND_15_o_add_7_OUT> created at line 282.
+    Found 2-bit adder for signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.calc_addr_2> created at line 292.
+    Found 2-bit adder for signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.calc_addr_3> created at line 313.
+    Found 2-bit adder for signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.calc_addr_4> created at line 334.
+    Found 2-bit adder for signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.calc_addr_5> created at line 355.
+    Found 7-bit adder for signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.calc_addr_11_6> created at line 376.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+Unit <axi_emc_addr_gen> synthesized.
+
+Synthesizing Unit <axi_emc_address_decode>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_03_b/hdl/vhdl/axi_emc_address_decode.vhd".
+        C_S_AXI_ADDR_WIDTH = 32
+        C_ADDR_DECODE_BITS = 32
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000001001010000000000000000000","0000000000000000000000000000000001000001001011111111111111111111")
+        C_ARD_NUM_CE_ARRAY = (1)
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <Addr_int> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RdFIFO_Space_two_int> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <cs_out_i>.
+    Found 1-bit register for signal <rdce_out_i>.
+    Found 1-bit register for signal <wrce_out_i>.
+    Found 1-bit register for signal <cs_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <axi_emc_address_decode> synthesized.
+
+Synthesizing Unit <srl_fifo_rbu_f>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd".
+        C_DWIDTH = 33
+        C_DEPTH = 256
+        C_FAMILY = "spartan6"
+    Found 1-bit register for signal <underflow_i>.
+    Found 1-bit register for signal <overflow_i>.
+    Found 1-bit register for signal <FIFO_Full>.
+    Found 9-bit comparator lessequal for signal <n0021> created at line 324
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <srl_fifo_rbu_f> synthesized.
+
+Synthesizing Unit <cntr_incr_decr_addn_f>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd".
+        C_SIZE = 9
+        C_FAMILY = "spartan6"
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" line 211: Output port <LO> of the instance <STRUCTURAL_A_GEN.Addr_Counters[8].MUXCY_L_I> is unconnected or connected to loadless signal.
+    Summary:
+Unit <cntr_incr_decr_addn_f> synthesized.
+
+Synthesizing Unit <dynshreg_f>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd".
+        C_DEPTH = 256
+        C_DWIDTH = 33
+        C_FAMILY = "spartan6"
+    Found 33-bit register for signal <INFERRED_GEN.data<1>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<2>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<3>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<4>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<5>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<6>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<7>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<8>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<9>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<10>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<11>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<12>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<13>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<14>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<15>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<16>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<17>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<18>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<19>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<20>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<21>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<22>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<23>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<24>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<25>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<26>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<27>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<28>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<29>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<30>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<31>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<32>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<33>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<34>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<35>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<36>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<37>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<38>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<39>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<40>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<41>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<42>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<43>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<44>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<45>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<46>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<47>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<48>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<49>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<50>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<51>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<52>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<53>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<54>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<55>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<56>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<57>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<58>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<59>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<60>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<61>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<62>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<63>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<64>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<65>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<66>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<67>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<68>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<69>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<70>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<71>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<72>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<73>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<74>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<75>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<76>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<77>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<78>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<79>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<80>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<81>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<82>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<83>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<84>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<85>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<86>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<87>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<88>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<89>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<90>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<91>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<92>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<93>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<94>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<95>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<96>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<97>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<98>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<99>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<100>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<101>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<102>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<103>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<104>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<105>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<106>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<107>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<108>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<109>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<110>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<111>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<112>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<113>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<114>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<115>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<116>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<117>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<118>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<119>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<120>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<121>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<122>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<123>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<124>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<125>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<126>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<127>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<128>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<129>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<130>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<131>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<132>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<133>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<134>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<135>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<136>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<137>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<138>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<139>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<140>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<141>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<142>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<143>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<144>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<145>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<146>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<147>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<148>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<149>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<150>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<151>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<152>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<153>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<154>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<155>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<156>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<157>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<158>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<159>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<160>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<161>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<162>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<163>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<164>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<165>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<166>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<167>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<168>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<169>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<170>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<171>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<172>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<173>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<174>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<175>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<176>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<177>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<178>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<179>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<180>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<181>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<182>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<183>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<184>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<185>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<186>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<187>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<188>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<189>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<190>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<191>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<192>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<193>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<194>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<195>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<196>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<197>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<198>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<199>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<200>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<201>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<202>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<203>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<204>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<205>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<206>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<207>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<208>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<209>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<210>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<211>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<212>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<213>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<214>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<215>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<216>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<217>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<218>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<219>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<220>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<221>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<222>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<223>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<224>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<225>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<226>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<227>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<228>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<229>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<230>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<231>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<232>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<233>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<234>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<235>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<236>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<237>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<238>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<239>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<240>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<241>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<242>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<243>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<244>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<245>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<246>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<247>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<248>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<249>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<250>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<251>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<252>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<253>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<254>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<255>>.
+    Found 33-bit register for signal <INFERRED_GEN.data<0>>.
+INFO:Xst:3019 - HDL ADVISOR - 8448 flip-flops were inferred for signal <INFERRED_GEN.data>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 33-bit 256-to-1 multiplexer for signal <Dout> created at line 367.
+    Summary:
+	inferred 8448 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <dynshreg_f> synthesized.
+
+Synthesizing Unit <counter_f>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+        C_NUM_BITS = 8
+        C_FAMILY = "nofamily"
+    Found 9-bit register for signal <INFERRED_GEN.icount_out>.
+    Found 9-bit adder for signal <INFERRED_GEN.icount_out_x[8]_GND_29_o_add_3_OUT> created at line 1241.
+    Found 9-bit subtractor for signal <GND_29_o_GND_29_o_sub_3_OUT<8:0>> created at line 1308.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter_f> synthesized.
+
+Synthesizing Unit <EMC>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/emc.vhd".
+        C_NUM_BANKS_MEM = 1
+        C_IPIF_DWIDTH = 32
+        C_IPIF_AWIDTH = 32
+        C_MEM0_BASEADDR = "01000001001010000000000000000000"
+        C_MEM0_HIGHADDR = "01000001001011111111111111111111"
+        C_MEM1_BASEADDR = "11111111111111111111111111111111"
+        C_MEM1_HIGHADDR = "00000000000000000000000000000000"
+        C_MEM2_BASEADDR = "11111111111111111111111111111111"
+        C_MEM2_HIGHADDR = "00000000000000000000000000000000"
+        C_MEM3_BASEADDR = "11111111111111111111111111111111"
+        C_MEM3_HIGHADDR = "00000000000000000000000000000000"
+        C_INCLUDE_NEGEDGE_IOREGS = 0
+        C_PAGEMODE_FLASH_0 = 0
+        C_PAGEMODE_FLASH_1 = 0
+        C_PAGEMODE_FLASH_2 = 0
+        C_PAGEMODE_FLASH_3 = 0
+        C_MEM0_WIDTH = 8
+        C_MEM1_WIDTH = 32
+        C_MEM2_WIDTH = 32
+        C_MEM3_WIDTH = 32
+        C_MAX_MEM_WIDTH = 8
+        C_MEM0_TYPE = 2
+        C_MEM1_TYPE = 0
+        C_MEM2_TYPE = 0
+        C_MEM3_TYPE = 0
+        C_PARITY_TYPE_0 = 0
+        C_PARITY_TYPE_1 = 0
+        C_PARITY_TYPE_2 = 0
+        C_PARITY_TYPE_3 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_0 = 1
+        C_INCLUDE_DATAWIDTH_MATCHING_1 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_2 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_3 = 0
+        C_BUS_CLOCK_PERIOD_PS = 10000
+        C_SYNCH_MEM_0 = 0
+        C_SYNCH_PIPEDELAY_0 = 2
+        C_TCEDV_PS_MEM_0 = 15000
+        C_TAVDV_PS_MEM_0 = 15000
+        C_TPACC_PS_FLASH_0 = 25000
+        C_THZCE_PS_MEM_0 = 7000
+        C_THZOE_PS_MEM_0 = 7000
+        C_TWC_PS_MEM_0 = 15000
+        C_TWP_PS_MEM_0 = 12000
+        C_TWPH_PS_MEM_0 = 12000
+        C_TLZWE_PS_MEM_0 = 0
+        C_WR_REC_TIME_MEM_0 = 100000
+        C_SYNCH_MEM_1 = 1
+        C_SYNCH_PIPEDELAY_1 = 2
+        C_TCEDV_PS_MEM_1 = 15000
+        C_TAVDV_PS_MEM_1 = 15000
+        C_TPACC_PS_FLASH_1 = 25000
+        C_THZCE_PS_MEM_1 = 7000
+        C_THZOE_PS_MEM_1 = 7000
+        C_TWC_PS_MEM_1 = 15000
+        C_TWP_PS_MEM_1 = 12000
+        C_TWPH_PS_MEM_1 = 12000
+        C_TLZWE_PS_MEM_1 = 0
+        C_WR_REC_TIME_MEM_1 = 100000
+        C_SYNCH_MEM_2 = 1
+        C_SYNCH_PIPEDELAY_2 = 2
+        C_TCEDV_PS_MEM_2 = 15000
+        C_TAVDV_PS_MEM_2 = 15000
+        C_TPACC_PS_FLASH_2 = 25000
+        C_THZCE_PS_MEM_2 = 7000
+        C_THZOE_PS_MEM_2 = 7000
+        C_TWC_PS_MEM_2 = 15000
+        C_TWP_PS_MEM_2 = 12000
+        C_TWPH_PS_MEM_2 = 12000
+        C_TLZWE_PS_MEM_2 = 0
+        C_WR_REC_TIME_MEM_2 = 100000
+        C_SYNCH_MEM_3 = 1
+        C_SYNCH_PIPEDELAY_3 = 2
+        C_TCEDV_PS_MEM_3 = 15000
+        C_TAVDV_PS_MEM_3 = 15000
+        C_TPACC_PS_FLASH_3 = 25000
+        C_THZCE_PS_MEM_3 = 7000
+        C_THZOE_PS_MEM_3 = 7000
+        C_TWC_PS_MEM_3 = 15000
+        C_TWP_PS_MEM_3 = 12000
+        C_TWPH_PS_MEM_3 = 12000
+        C_TLZWE_PS_MEM_3 = 0
+        C_WR_REC_TIME_MEM_3 = 100000
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/emc.vhd" line 1197: Output port <Data_strobe> of the instance <MEM_STATE_MACHINE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/emc.vhd" line 1197: Output port <CS_Strobe> of the instance <MEM_STATE_MACHINE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/emc.vhd" line 1197: Output port <Flash_mem_access_disable> of the instance <MEM_STATE_MACHINE_I> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <EMC> synthesized.
+
+Synthesizing Unit <ipic_if>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/ipic_if.vhd".
+        C_NUM_BANKS_MEM = 1
+        C_IPIF_DWIDTH = 32
+WARNING:Xst:647 - Input <Bus2IP_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_RdReq_emc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_WrReq_emc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pr_state_wait_temp_cmb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <bus2Mem_CS_reduce_reg>.
+    Found 32-bit register for signal <IP2Bus_Data>.
+    Found 1-bit register for signal <IP2Bus_RdAck>.
+    Found 1-bit register for signal <pend_wrreq>.
+    Found 1-bit register for signal <pend_rdreq>.
+    Found 4-bit register for signal <rd_cnt>.
+    Found 4-bit adder for signal <rd_cnt[3]_GND_32_o_add_8_OUT> created at line 500.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <ipic_if> synthesized.
+
+Synthesizing Unit <ld_arith_reg_1>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd".
+        C_ADD_SUB_NOT = false
+        C_REG_WIDTH = 8
+        C_RESET_VALUE = "00000000"
+        C_LD_WIDTH = 8
+        C_LD_OFFSET = 0
+        C_AD_WIDTH = 1
+        C_AD_OFFSET = 0
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" line 294: Output port <O> of the instance <PERBIT_GEN[0].MUXCY_i1> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <ld_arith_reg_1> synthesized.
+
+Synthesizing Unit <mem_state_machine>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_state_machine.vhd".
+    Set property "MAX_FANOUT = 30" for signal <write_req_ack_cmb>.
+    Set property "MAX_FANOUT = 30" for signal <read_req_ack_cmb>.
+    Set property "MAX_FANOUT = 30" for signal <Write_req_data_ack_cmb>.
+    Set property "MAX_FANOUT = 30" for signal <Write_req_addr_ack_cmb>.
+WARNING:Xst:647 - Input <Bus2IP_Burst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <original_wrce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <Data_strobe> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <addressData_strobe_cmb> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <Addr_align_rd>.
+    Found 1-bit register for signal <addr_align_rd_d1>.
+    Found 1-bit register for signal <new_page_d1>.
+    Found 1-bit register for signal <transaction_complete_reg>.
+    Found 1-bit register for signal <read_break_reg_d1>.
+    Found 1-bit register for signal <cs_strobe_reg>.
+    Found 1-bit register for signal <read_data_en_reg>.
+    Found 1-bit register for signal <Bus2IP_Mem_CS_d1>.
+    Found 1-bit register for signal <Bus2IP_Mem_CS_d2>.
+    Found 1-bit register for signal <Bus2IP_RdReq_d1>.
+    Found 1-bit register for signal <transaction_done_reg>.
+    Found 1-bit register for signal <read_ack_reg>.
+    Found 4-bit register for signal <crnt_state>.
+INFO:Xst:1799 - State linear_flash_sync_rd is never reached in FSM <crnt_state>.
+    Found finite state machine <FSM_1> for signal <crnt_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 45                                             |
+    | Inputs             | 20                                             |
+    | Outputs            | 11                                             |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred 244 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <mem_state_machine> synthesized.
+
+Synthesizing Unit <addr_counter_mux>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/addr_counter_mux.vhd".
+        C_ADDR_CNTR_WIDTH = 2
+        C_IPIF_AWIDTH = 32
+        C_IPIF_DWIDTH = 32
+        C_ADDR_OFFSET = 2
+        PARITY_TYPE_MEMORY = 0
+        C_GLOBAL_DATAWIDTH_MATCH = 1
+WARNING:Xst:647 - Input <Address_strobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2Mem_CS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CS_par_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data_strobe_c> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <psram_page_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <par_error_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <Addr_align> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 2-bit register for signal <addr_cnt_i>.
+    Found 2-bit adder for signal <addr_cnt_i[0]_GND_35_o_add_5_OUT> created at line 388.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+Unit <addr_counter_mux> synthesized.
+
+Synthesizing Unit <ld_arith_reg_2>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd".
+        C_ADD_SUB_NOT = false
+        C_REG_WIDTH = 2
+        C_RESET_VALUE = "00"
+        C_LD_WIDTH = 2
+        C_LD_OFFSET = 0
+        C_AD_WIDTH = 1
+        C_AD_OFFSET = 0
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" line 294: Output port <O> of the instance <PERBIT_GEN[0].MUXCY_i1> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <ld_arith_reg_2> synthesized.
+
+Synthesizing Unit <counters>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/counters.vhd".
+    Summary:
+	no macro.
+Unit <counters> synthesized.
+
+Synthesizing Unit <ld_arith_reg_3>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd".
+        C_ADD_SUB_NOT = false
+        C_REG_WIDTH = 5
+        C_RESET_VALUE = "11111"
+        C_LD_WIDTH = 5
+        C_LD_OFFSET = 0
+        C_AD_WIDTH = 1
+        C_AD_OFFSET = 0
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" line 294: Output port <O> of the instance <PERBIT_GEN[0].MUXCY_i1> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <ld_arith_reg_3> synthesized.
+
+Synthesizing Unit <ld_arith_reg_4>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd".
+        C_ADD_SUB_NOT = false
+        C_REG_WIDTH = 5
+        C_RESET_VALUE = "00000"
+        C_LD_WIDTH = 5
+        C_LD_OFFSET = 0
+        C_AD_WIDTH = 1
+        C_AD_OFFSET = 0
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" line 294: Output port <O> of the instance <PERBIT_GEN[0].MUXCY_i1> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <ld_arith_reg_4> synthesized.
+
+Synthesizing Unit <ld_arith_reg_5>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd".
+        C_ADD_SUB_NOT = false
+        C_REG_WIDTH = 16
+        C_RESET_VALUE = "1111111111111111"
+        C_LD_WIDTH = 16
+        C_LD_OFFSET = 0
+        C_AD_WIDTH = 1
+        C_AD_OFFSET = 0
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" line 294: Output port <O> of the instance <PERBIT_GEN[0].MUXCY_i1> is unconnected or connected to loadless signal.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <ld_arith_reg_5> synthesized.
+
+Synthesizing Unit <select_param>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/select_param.vhd".
+        C_NUM_BANKS_MEM = 1
+        C_GLOBAL_SYNC_MEM = 0
+        C_SYNCH_MEM_0 = 0
+        C_SYNCH_MEM_1 = 1
+        C_SYNCH_MEM_2 = 1
+        C_SYNCH_MEM_3 = 1
+        C_MEM0_WIDTH = 8
+        C_MEM1_WIDTH = 32
+        C_MEM2_WIDTH = 32
+        C_MEM3_WIDTH = 32
+        C_PAGEMODE_FLASH = 0
+        C_PAGEMODE_FLASH_0 = 0
+        C_PAGEMODE_FLASH_1 = 0
+        C_PAGEMODE_FLASH_2 = 0
+        C_PAGEMODE_FLASH_3 = 0
+        PARITY_TYPE_MEMORY = 0
+        C_PARITY_TYPE_0 = 0
+        C_PARITY_TYPE_1 = 0
+        C_PARITY_TYPE_2 = 0
+        C_PARITY_TYPE_3 = 0
+        C_IPIF_AWIDTH = 32
+        C_IPIF_DWIDTH = 32
+        C_SYNCH_PIPEDELAY_0 = 2
+        C_SYNCH_PIPEDELAY_1 = 2
+        C_SYNCH_PIPEDELAY_2 = 2
+        C_SYNCH_PIPEDELAY_3 = 2
+        C_GLOBAL_DATAWIDTH_MATCH = 1
+        C_INCLUDE_DATAWIDTH_MATCHING_0 = 1
+        C_INCLUDE_DATAWIDTH_MATCHING_1 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_2 = 0
+        C_INCLUDE_DATAWIDTH_MATCHING_3 = 0
+        TRDCNT_0 = "00010"
+        TRDCNT_1 = "00010"
+        TRDCNT_2 = "00010"
+        TRDCNT_3 = "00010"
+        THZCNT_0 = "00001"
+        THZCNT_1 = "00001"
+        THZCNT_2 = "00001"
+        THZCNT_3 = "00001"
+        TWRCNT_0 = "00001"
+        TWRCNT_1 = "00001"
+        TWRCNT_2 = "00001"
+        TWRCNT_3 = "00001"
+        TWPHCNT_0 = "00010"
+        TWPHCNT_1 = "00010"
+        TWPHCNT_2 = "00010"
+        TWPHCNT_3 = "00010"
+        TPACC_0 = "00011"
+        TPACC_1 = "00011"
+        TPACC_2 = "00011"
+        TPACC_3 = "00011"
+        TLZCNT_0 = "00001"
+        TLZCNT_1 = "00001"
+        TLZCNT_2 = "00001"
+        TLZCNT_3 = "00001"
+        TP_WR_REC_CNT_0 = "0000000000001011"
+        TP_WR_REC_CNT_1 = "0000000000001011"
+        TP_WR_REC_CNT_2 = "0000000000001011"
+        TP_WR_REC_CNT_3 = "0000000000001011"
+WARNING:Xst:647 - Input <Bus2IP_Mem_CS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_Reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <psram_page_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <select_param> synthesized.
+
+Synthesizing Unit <mem_steer>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/mem_steer.vhd".
+        C_NUM_BANKS_MEM = 1
+        C_MAX_MEM_WIDTH = 8
+        C_MIN_MEM_WIDTH = 8
+        C_IPIF_DWIDTH = 32
+        C_IPIF_AWIDTH = 32
+        C_PARITY_TYPE_MEMORY = 0
+        C_ADDR_CNTR_WIDTH = 2
+        C_GLOBAL_DATAWIDTH_MATCH = 1
+        C_GLOBAL_SYNC_MEM = 0
+WARNING:Xst:647 - Input <Bus2IP_Mem_CS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MemSteer_Mem_DQ_prty_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_Burst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Write_req_ack> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Synch_mem> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Two_pipe_delay> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Parity_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Parity_type> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Addr_align> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_RdReq_emc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <address_strobe_c> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <be_strobe_c> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stop_oen> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <MemSteer_Mem_DQ_prty_T> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <write_data_parity_cmb> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <mem_dqt_t_d>.
+    Found 2-bit register for signal <addr_cnt_d1>.
+    Found 2-bit register for signal <addr_cnt_d2>.
+    Found 3-bit adder for signal <addr_cnt_sel[0]_GND_42_o_add_29_OUT> created at line 1912.
+    Found 8-bit 4-to-1 multiplexer for signal <GND_42_o_write_data[24]_mux_8_OUT> created at line 1271.
+    Found 1-bit 4-to-1 multiplexer for signal <GND_42_o_Bus2IP_BE[3]_MUX_842_o> created at line 1297.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred  28 Multiplexer(s).
+Unit <mem_steer> synthesized.
+
+Synthesizing Unit <io_registers>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_03_b/hdl/vhdl/io_registers.vhd".
+        C_INCLUDE_NEGEDGE_IOREGS = 0
+        C_IPIF_AWIDTH = 32
+        C_MAX_MEM_WIDTH = 8
+        C_NUM_BANKS_MEM = 1
+        C_FAMILY = "virtex6"
+    Found 8-bit register for signal <mem_dq_t_reg>.
+    Found 1-bit register for signal <mem_dq_paity_o_reg>.
+    Found 1-bit register for signal <mem_dq_paity_t_reg>.
+    Found 1-bit register for signal <mem_cen_reg>.
+    Found 1-bit register for signal <mem_oen_reg>.
+    Found 1-bit register for signal <mem_wen_reg>.
+    Found 1-bit register for signal <mem_qwen_reg>.
+    Found 1-bit register for signal <mem_ben_reg>.
+    Found 1-bit register for signal <mem_rpn_reg>.
+    Found 1-bit register for signal <mem_ce_reg>.
+    Found 1-bit register for signal <mem_adv_ldn_reg>.
+    Found 1-bit register for signal <mem_rnw_reg>.
+    Found 32-bit register for signal <mem_a_reg>.
+    Found 8-bit register for signal <Mem_DQ_I_int>.
+    Found 1-bit register for signal <Mem_DQ_PARITY_I_int>.
+    Found 8-bit register for signal <mem_dq_o_reg>.
+    WARNING:Xst:2404 -  FFs/Latches <mem_lbon_reg<0:0>> (without init value) have a constant value of 0 in block <io_registers>.
+    WARNING:Xst:2404 -  FFs/Latches <mem_cken_reg<0:0>> (without init value) have a constant value of 0 in block <io_registers>.
+    Summary:
+	inferred  68 D-type flip-flop(s).
+Unit <io_registers> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 14
+ 2-bit adder                                           : 5
+ 3-bit adder                                           : 3
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 8-bit subtractor                                      : 3
+ 9-bit addsub                                          : 1
+# Registers                                            : 358
+ 1-bit register                                        : 80
+ 2-bit register                                        : 7
+ 3-bit register                                        : 1
+ 32-bit register                                       : 3
+ 33-bit register                                       : 256
+ 4-bit register                                        : 3
+ 8-bit register                                        : 7
+ 9-bit register                                        : 1
+# Comparators                                          : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 413
+ 1-bit 2-to-1 multiplexer                              : 375
+ 1-bit 4-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 14
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 2
+ 33-bit 256-to-1 multiplexer                           : 1
+ 4-bit 2-to-1 multiplexer                              : 3
+ 4-bit 3-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 12
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 75
+ 1-bit xor2                                            : 74
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <addr_counter_mux>.
+The following registers are absorbed into counter <addr_cnt_i>: 1 register on signal <addr_cnt_i>.
+Unit <addr_counter_mux> synthesized (advanced).
+
+Synthesizing (advanced) Unit <axi_emc_addr_gen>.
+The following registers are absorbed into accumulator <BUS2IP_ADDR_GEN_DATA_WDTH_32.internal_count>: 1 register on signal <BUS2IP_ADDR_GEN_DATA_WDTH_32.internal_count>.
+Unit <axi_emc_addr_gen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <axi_emc_native_interface>.
+The following registers are absorbed into counter <rd_data_count>: 1 register on signal <rd_data_count>.
+The following registers are absorbed into counter <burst_addr_cnt>: 1 register on signal <burst_addr_cnt>.
+The following registers are absorbed into counter <burst_data_cnt>: 1 register on signal <burst_data_cnt>.
+Unit <axi_emc_native_interface> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ipic_if>.
+The following registers are absorbed into counter <rd_cnt>: 1 register on signal <rd_cnt>.
+Unit <ipic_if> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dynshreg_f>.
+	Found 256-bit dynamic shift register for signal <Dout<32>>.
+	Found 256-bit dynamic shift register for signal <Dout<31>>.
+	Found 256-bit dynamic shift register for signal <Dout<30>>.
+	Found 256-bit dynamic shift register for signal <Dout<29>>.
+	Found 256-bit dynamic shift register for signal <Dout<28>>.
+	Found 256-bit dynamic shift register for signal <Dout<27>>.
+	Found 256-bit dynamic shift register for signal <Dout<26>>.
+	Found 256-bit dynamic shift register for signal <Dout<25>>.
+	Found 256-bit dynamic shift register for signal <Dout<24>>.
+	Found 256-bit dynamic shift register for signal <Dout<23>>.
+	Found 256-bit dynamic shift register for signal <Dout<22>>.
+	Found 256-bit dynamic shift register for signal <Dout<21>>.
+	Found 256-bit dynamic shift register for signal <Dout<20>>.
+	Found 256-bit dynamic shift register for signal <Dout<19>>.
+	Found 256-bit dynamic shift register for signal <Dout<18>>.
+	Found 256-bit dynamic shift register for signal <Dout<17>>.
+	Found 256-bit dynamic shift register for signal <Dout<16>>.
+	Found 256-bit dynamic shift register for signal <Dout<15>>.
+	Found 256-bit dynamic shift register for signal <Dout<14>>.
+	Found 256-bit dynamic shift register for signal <Dout<13>>.
+	Found 256-bit dynamic shift register for signal <Dout<12>>.
+	Found 256-bit dynamic shift register for signal <Dout<11>>.
+	Found 256-bit dynamic shift register for signal <Dout<10>>.
+	Found 256-bit dynamic shift register for signal <Dout<9>>.
+	Found 256-bit dynamic shift register for signal <Dout<8>>.
+	Found 256-bit dynamic shift register for signal <Dout<7>>.
+	Found 256-bit dynamic shift register for signal <Dout<6>>.
+	Found 256-bit dynamic shift register for signal <Dout<5>>.
+	Found 256-bit dynamic shift register for signal <Dout<4>>.
+	Found 256-bit dynamic shift register for signal <Dout<3>>.
+	Found 256-bit dynamic shift register for signal <Dout<2>>.
+	Found 256-bit dynamic shift register for signal <Dout<1>>.
+	Found 256-bit dynamic shift register for signal <Dout<0>>.
+Unit <dynshreg_f> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 2-bit adder                                           : 4
+ 3-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit down counter                                    : 3
+# Accumulators                                         : 1
+ 3-bit up loadable accumulator cin                     : 1
+# Registers                                            : 425
+ Flip-Flops                                            : 425
+# Shift Registers                                      : 33
+ 256-bit dynamic shift register                        : 33
+# Comparators                                          : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 407
+ 1-bit 2-to-1 multiplexer                              : 375
+ 1-bit 4-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 13
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 3
+ 4-bit 3-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 9
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 75
+ 1-bit xor2                                            : 74
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <s_axi_mem_bresp_reg_0> (without init value) has a constant value of 0 in block <axi_emc_native_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mem_adv_ldn_reg> (without init value) has a constant value of 0 in block <io_registers>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/FSM_0> on signal <emc_addr_ps[1:3]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ idle    | 000
+ rd      | 001
+ rd_last | 010
+ wr      | 011
+ wr_wait | 100
+ wr_resp | unreached
+ wr_last | 110
+ resp    | 111
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/FSM_1> on signal <crnt_state[1:4]> with user encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ idle                 | 0000
+ write                | 0001
+ dassert_wen          | 0010
+ wait_write_ack       | 0011
+ wait_temp            | 0100
+ wr_rec_period        | 0101
+ read                 | 0110
+ linear_flash_sync_rd | unreached
+ page_read            | 1000
+ wait_rddata_ack      | 1001
+----------------------------------
+WARNING:Xst:2677 - Node <BUS2IP_ADDR_GEN_DATA_WDTH_32.internal_count_2> of sequential type is unconnected in block <axi_emc_addr_gen>.
+
+Optimizing unit <dynshreg_f> ...
+
+Optimizing unit <io_registers> ...
+
+Optimizing unit <microblaze_generic_external_memory_wrapper> ...
+
+Optimizing unit <axi_emc_native_interface> ...
+
+Optimizing unit <axi_emc_addr_gen> ...
+
+Optimizing unit <axi_emc_address_decode> ...
+
+Optimizing unit <srl_fifo_rbu_f> ...
+
+Optimizing unit <cntr_incr_decr_addn_f> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <EMC> ...
+
+Optimizing unit <addr_counter_mux> ...
+
+Optimizing unit <ld_arith_reg_2> ...
+
+Optimizing unit <mem_steer> ...
+
+Optimizing unit <ipic_if> ...
+
+Optimizing unit <mem_state_machine> ...
+
+Optimizing unit <counters> ...
+
+Optimizing unit <ld_arith_reg_3> ...
+
+Optimizing unit <ld_arith_reg_4> ...
+
+Optimizing unit <ld_arith_reg_5> ...
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/addr_align_rd_d1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/mem_dq_paity_o_reg_0> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Addr_align_rd> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/RdFIFO_Space_two_int> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/wrce_out_i_0> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.RDATA_FIFO_I/overflow_i> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.RDATA_FIFO_I/underflow_i> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_8> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_7> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_6> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_5> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_4> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_3> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_2> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_1> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.UPDN_COUNTER_I/INFERRED_GEN.icount_out_0> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/EMC_CTRL_I/IPIC_IF_I/rd_cnt_3> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/EMC_CTRL_I/IPIC_IF_I/rd_cnt_2> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/EMC_CTRL_I/IPIC_IF_I/rd_cnt_1> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/EMC_CTRL_I/IPIC_IF_I/rd_cnt_0> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/cs_strobe_reg> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:2677 - Node <Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_PARITY_I_int_0> of sequential type is unconnected in block <microblaze_generic_external_memory_wrapper>.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/new_page_d1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/mem_dqt_t_d> in Unit <microblaze_generic_external_memory_wrapper> is equivalent to the following FF/Latch, which will be removed : <Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/mem_wen_reg> 
+INFO:Xst:2261 - The FF/Latch <Generic_External_Memory/bus2ip_reset> in Unit <microblaze_generic_external_memory_wrapper> is equivalent to the following FF/Latch, which will be removed : <Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/active_high_rst> 
+INFO:Xst:2261 - The FF/Latch <Generic_External_Memory/EMC_CTRL_I/IPIC_IF_I/bus2Mem_CS_reduce_reg> in Unit <microblaze_generic_external_memory_wrapper> is equivalent to the following FF/Latch, which will be removed : <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Bus2IP_Mem_CS_d1> 
+INFO:Xst:3203 - The FF/Latch <Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/mem_ce_reg_0> in Unit <microblaze_generic_external_memory_wrapper> is the opposite to the following FF/Latch, which will be removed : <Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/mem_cen_reg_0> 
+
+Mapping all equations...
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block microblaze_generic_external_memory_wrapper, actual ratio is 21.
+WARNING:Xst:387 - The KEEP property attached to the net <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Write_req_addr_ack_cmb> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Write_req_data_ack_cmb> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/read_req_ack_cmb> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+FlipFlop Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/cs_out_i_0 has been replicated 1 time(s)
+FlipFlop Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/bus2ip_wr_req_reg has been replicated 1 time(s)
+FlipFlop Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd4 has been replicated 1 time(s)
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 445
+ Flip-Flops                                            : 445
+
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[0].AALIGN_PIPE> has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[3].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TPACCCNT_I/PERBIT_GEN[4].FF_RST1_GEN.FDSE_i1> (without init value) has a constant value of 1 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/THZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[1].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[2].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TLZCNT_I/PERBIT_GEN[3].FF_RST0_GEN.FDRE_i1> (without init value) has a constant value of 0 in block <microblaze_generic_external_memory_wrapper>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : microblaze_generic_external_memory_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1030
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 64
+#      LUT3                        : 160
+#      LUT4                        : 59
+#      LUT5                        : 82
+#      LUT6                        : 193
+#      MULT_AND                    : 64
+#      MUXCY                       : 85
+#      MUXCY_L                     : 9
+#      MUXF7                       : 145
+#      MUXF8                       : 66
+#      VCC                         : 1
+#      XORCY                       : 97
+# FlipFlops/Latches                : 445
+#      FD                          : 13
+#      FDE                         : 16
+#      FDR                         : 182
+#      FDRE                        : 180
+#      FDS                         : 23
+#      FDSE                        : 31
+# Shift Registers                  : 264
+#      SRLC32E                     : 264
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             428  out of  11440     3%  
+ Number of Slice LUTs:                  826  out of   5720    14%  
+    Number used as Logic:               562  out of   5720     9%  
+    Number used as Memory:              264  out of   1440    18%  
+       Number used as SRL:              264
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    980
+   Number with an unused Flip Flop:     552  out of    980    56%  
+   Number with an unused LUT:           154  out of    980    15%  
+   Number of fully used LUT-FF pairs:   274  out of    980    27%  
+   Number of unique control sets:        32
+
+IO Utilization: 
+ Number of IOs:                         361
+ Number of bonded IOBs:                   0  out of    102     0%  
+    IOB Flip Flops/Latches:              17
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                        | Load  |
+-----------------------------------+------------------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1)| 701   |
+RdClk                              | NONE(Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_int_0)       | 8     |
+-----------------------------------+------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.579ns (Maximum Frequency: 116.564MHz)
+   Minimum input arrival time before clock: 6.381ns
+   Maximum output required time after clock: 6.797ns
+   Maximum combinational path delay: 1.937ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 8.579ns (frequency: 116.564MHz)
+  Total number of paths / destination ports: 64953 / 2544
+-------------------------------------------------------------------------
+Delay:               8.579ns (Levels of Logic = 6)
+  Source:            Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/burst_data_cnt_6 (FF)
+  Destination:       Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/burst_addr_cnt_7 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/burst_data_cnt_6 to Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/burst_addr_cnt_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   0.954  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/burst_data_cnt_6 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/burst_data_cnt_6)
+     LUT3:I0->O            1   0.235   0.682  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/Mmux_enable_rdce_cmb11_SW0 (N12)
+     LUT6:I5->O           13   0.254   1.206  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/Mmux_enable_rdce_cmb11 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/Mmux_enable_rdce_cmb11)
+     LUT6:I4->O            4   0.250   0.804  Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Mmux_Write_req_addr_ack_cmb2321 (Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Mmux_Write_req_addr_ack_cmb232)
+     LUT6:I5->O            6   0.254   0.984  Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Mmux_Write_req_addr_ack_cmb261 (Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/read_req_ack_cmb)
+     LUT6:I4->O            1   0.250   0.682  Generic_External_Memory/EMC_CTRL_I/IPIC_IF_I/IP2Bus_AddrAck1_1 (Generic_External_Memory/EMC_CTRL_I/IPIC_IF_I/IP2Bus_AddrAck1)
+     LUT6:I5->O            8   0.254   0.943  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/_n0421_inv1 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/_n0421_inv)
+     FDE:CE                    0.302          Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/burst_addr_cnt_0
+    ----------------------------------------
+    Total                      8.579ns (2.324ns logic, 6.255ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 2459 / 312
+-------------------------------------------------------------------------
+Offset:              6.381ns (Levels of Logic = 6)
+  Source:            S_AXI_MEM_RREADY (PAD)
+  Destination:       Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/addr_sm_ps_IDLE_reg (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_MEM_RREADY to Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/addr_sm_ps_IDLE_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT5:I0->O            1   0.254   0.682  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In3_SW0 (N10)
+     LUT6:I5->O            2   0.254   0.834  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In3 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In3)
+     LUT6:I4->O            2   0.250   0.726  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In1 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In1)
+     LUT6:I5->O            2   0.254   1.156  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In51_SW0 (N59)
+     LUT5:I0->O            1   0.254   0.958  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In4 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3-In6)
+     LUT6:I2->O            1   0.254   0.000  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_axi_sm_ns_IDLE1 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/axi_sm_ns_IDLE)
+     FDS:D                     0.074          Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/addr_sm_ps_IDLE_reg
+    ----------------------------------------
+    Total                      6.381ns (2.025ns logic, 4.356ns route)
+                                       (31.7% logic, 68.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RdClk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.074ns (Levels of Logic = 0)
+  Source:            Mem_DQ_I<7> (PAD)
+  Destination:       Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_int_0 (FF)
+  Destination Clock: RdClk rising
+
+  Data Path: Mem_DQ_I<7> to Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:D                     0.074          Generic_External_Memory/EMC_CTRL_I/IO_REGISTERS_I/Mem_DQ_I_int_0
+    ----------------------------------------
+    Total                      0.074ns (0.074ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 428 / 99
+-------------------------------------------------------------------------
+Offset:              6.797ns (Levels of Logic = 5)
+  Source:            Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TWPHCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1 (FF)
+  Destination:       S_AXI_MEM_WREADY (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TWPHCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1 to S_AXI_MEM_WREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   1.156  Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/TWPHCNT_I/PERBIT_GEN[0].FF_RST0_GEN.FDRE_i1 (Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/twph_cnt<0>)
+     LUT5:I0->O            9   0.254   0.976  Generic_External_Memory/EMC_CTRL_I/COUNTERS_I/twph_cnt[0]_GND_37_o_equal_4_o<0>1 (Generic_External_Memory/EMC_CTRL_I/twph_end)
+     LUT3:I2->O            2   0.254   0.954  Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Mmux_Write_req_addr_ack_cmb212 (Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Mmux_Write_req_addr_ack_cmb212)
+     LUT6:I3->O            2   0.235   0.726  Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Mmux_Write_req_addr_ack_cmb221_SW0 (N102)
+     LUT6:I5->O           17   0.254   1.209  Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Mmux_Write_req_addr_ack_cmb221 (Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/Write_req_data_ack_cmb)
+     LUT6:I5->O            0   0.254   0.000  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/Mmux_wready_cmb11 (S_AXI_MEM_WREADY)
+    ----------------------------------------
+    Total                      6.797ns (1.776ns logic, 5.021ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 3
+-------------------------------------------------------------------------
+Delay:               1.937ns (Levels of Logic = 2)
+  Source:            S_AXI_MEM_AWVALID (PAD)
+  Destination:       S_AXI_MEM_AWREADY (PAD)
+
+  Data Path: S_AXI_MEM_AWVALID to S_AXI_MEM_AWREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            6   0.254   1.152  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1-In31 (Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1-In3)
+     LUT5:I1->O            1   0.254   0.000  Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/awready_cmb1 (S_AXI_MEM_AWREADY)
+    ----------------------------------------
+    Total                      1.937ns (0.785ns logic, 1.152ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock RdClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    3.416|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+RdClk          |    1.402|         |         |         |
+S_AXI_ACLK     |    8.579|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.21 secs
+ 
+--> 
+
+Total memory usage is 366156 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  295 (   0 filtered)
+Number of infos    :   26 (   0 filtered)
+

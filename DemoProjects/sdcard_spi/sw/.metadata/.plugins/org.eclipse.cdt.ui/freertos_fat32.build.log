@@ -1,0 +1,29 @@
+18:46:09 **** Auto Build of configuration Debug for project freertos_fat32 ****
+make all 
+'Building target: freertos_fat32.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "freertos_fat32.elf"  ./src/fat/portable/common/ff_sddisk.o ./src/fat/portable/common/ma_delay.o ./src/fat/portable/common/ma_sd_gpio.o ./src/fat/portable/common/sdmm.o  ./src/fat/ff_crc.o ./src/fat/ff_dir.o ./src/fat/ff_error.o ./src/fat/ff_fat.o ./src/fat/ff_file.o ./src/fat/ff_format.o ./src/fat/ff_ioman.o ./src/fat/ff_locking.o ./src/fat/ff_memory.o ./src/fat/ff_stdio.o ./src/fat/ff_string.o ./src/fat/ff_sys.o ./src/fat/ff_time.o  ./src/CreateAndVerifyExampleFiles.o ./src/freertos_hook.o ./src/main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: freertos_fat32.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size freertos_fat32.elf  |tee "freertos_fat32.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 174488	   1592	  70616	 246696	  3c3a8	freertos_fat32.elf
+'Finished building: freertos_fat32.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck freertos_fat32.elf -hw ../../microblaze_hw_platform/system.xml -pe microblaze_0  |tee "freertos_fat32.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../microblaze_hw_platform/system.xml -pe
+microblaze_0 freertos_fat32.elf 
+
+ELF file	: freertos_fat32.elf
+elfcheck passed.
+'Finished building: freertos_fat32.elf.elfcheck'
+' '
+
+18:46:12 Build Finished (took 2s.922ms)
+

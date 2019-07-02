@@ -1,0 +1,15 @@
+-p
+xc6slx9tqg144-2
+-lang
+verilog
+-intstyle
+ise
+-lp
+D:/edk_ip/
+-toplevel
+no
+-ti
+microblaze_i
+-msg
+__xps/ise/xmsgprops.lst
+microblaze.mhs

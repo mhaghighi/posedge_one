@@ -1,0 +1,6 @@
+15:29:32 **** Auto Build of project freertos_bsp_0 ****
+make -k all 
+'Finished building libraries'
+
+15:29:32 Build Finished (took 168ms)
+

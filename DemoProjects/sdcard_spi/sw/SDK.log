@@ -1,0 +1,179 @@
+18:35:37.081 INFO  - Processing command line option -hwspec C:/Users/Mahdi/Desktop/sd_new_spi/hw/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+18:35:44.754 INFO  - Restoring global repository preferences: 
+		 D:\KernelAwareBSPRepository 
+18:35:47.385 WARN  - Unable to determine location of documentation for OS freertos. 
+18:37:27.421 INFO  - FPGA configured successfully with bitstream "C:/Users/Mahdi/Desktop/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+18:38:01.662 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:38:01.664 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:38:02.888 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:38:31.971 INFO  - FPGA configured successfully with bitstream "C:/Users/Mahdi/Desktop/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+18:41:09.581 INFO  - Project freertos_bsp_0 was a BSP project. Please update references. 
+18:41:09.581 ERROR - SDK has detected that project freertos_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+18:42:44.110 INFO  - Restoring global repository preferences: 
+		 D:\KernelAwareBSPRepository 
+18:42:47.236 WARN  - Unable to determine location of documentation for OS freertos. 
+18:44:19.256 INFO  - Project freertos_bsp_0 was a BSP project. Please update references. 
+18:44:19.256 ERROR - SDK has detected that project freertos_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+18:44:26.419 WARN  - Unable to determine location of documentation for OS freertos. 
+18:45:43.511 INFO  - Project freertos_bsp_0 was a BSP project. Please update references. 
+18:45:43.511 ERROR - SDK has detected that project freertos_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+18:45:51.100 WARN  - Unable to determine location of documentation for OS freertos. 
+18:49:17.184 INFO  - FPGA configured successfully with bitstream "C:/Users/Mahdi/Desktop/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+18:52:27.453 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:52:29.121 INFO  - System reset is completed. 
+18:53:48.161 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:53:50.233 INFO  - System reset is completed. 
+18:58:59.375 INFO  - Project freertos_bsp_0 was a BSP project. Please update references. 
+18:58:59.375 ERROR - SDK has detected that project freertos_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+18:59:04.433 WARN  - Unable to determine location of documentation for OS freertos. 
+19:03:51.826 INFO  - Project freertos_bsp_0 was a BSP project. Please update references. 
+19:03:51.826 ERROR - SDK has detected that project freertos_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+19:03:56.187 WARN  - Unable to determine location of documentation for OS freertos. 
+19:04:53.630 INFO  - System reset is completed. 
+19:06:00.102 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+19:06:00.102 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:30:47.554 ERROR - Unable to read in MSS file C:\Users\Mahmoud\Desktop\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+11:32:46.406 ERROR - Unable to read in MSS file C:\Users\Mahmoud\Desktop\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+11:32:46.488 ERROR - Unable to read in MSS file C:\Users\Mahmoud\Desktop\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+11:33:13.202 ERROR - Unable to read in MSS file C:\Users\Mahmoud\Desktop\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+11:33:13.267 ERROR - Unable to read in MSS file C:\Users\Mahmoud\Desktop\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+11:33:21.920 ERROR - Unable to read in MSS file C:\Users\Mahmoud\Desktop\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+11:33:21.958 ERROR - Unable to read in MSS file C:\Users\Mahmoud\Desktop\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+11:34:33.336 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:35:31.024 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:35:59.024 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:36:04.703 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+11:36:04.709 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:36:43.293 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:36:59.664 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:37:34.387 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:39:48.523 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:40:49.306 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:53:19.407 INFO  - FPGA configured successfully with bitstream "C:/Users/Mahmoud/Desktop/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+22:54:52.836 ERROR - Port COM4 is already in use. 
+22:56:18.595 ERROR - Port COM4 is already in use. 
+22:56:27.494 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:16:18.372 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:17:40.219 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:18:10.134 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:19:06.711 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:20:22.522 ERROR - Unable to read in MSS file D:\Projects\Posedge\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+15:20:28.332 ERROR - Unable to read in MSS file D:\Projects\Posedge\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+15:20:44.989 ERROR - Unable to read in MSS file D:\Projects\Posedge\sd_new_spi\sw\freertos_bsp_0\system.mss. 
+15:20:54.192 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:23:01.464 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:23:18.868 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:26:33.686 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:28:51.736 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+15:29:14.287 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:29:23.844 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:29:46.271 INFO  - Processor microblaze_0 will be used to program the selected flash controller. 
+15:31:34.987 ERROR - Port COM15 is already in use. 
+15:32:59.854 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+15:34:02.606 ERROR - Port COM15 is already in use. 
+15:34:07.565 ERROR - Port COM15 is already in use. 
+15:35:08.377 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:35:31.472 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:38:23.777 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:38:37.218 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:39:23.552 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:39:35.852 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:42:13.064 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+15:43:46.285 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:44:17.984 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:46:39.600 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+15:46:39.601 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+15:57:24.371 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+16:00:15.570 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+16:00:15.572 ERROR - Timeout occured while waiting to get reply for command "xfpga_isconfigured -cable type digilent_plugin" 
+16:00:15.573 ERROR - Checking FPGA configuration failed.. 
+16:00:25.635 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/sd_new_spi/sw/microblaze_hw_platform/download.bit" 
+16:08:35.606 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:16:09.475 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/Github/DemoProjects/sdcard_spi/sw/microblaze_hw_platform/download.bit" 
+17:34:50.426 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+17:34:50.428 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
