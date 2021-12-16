@@ -1,0 +1,6 @@
+19:00:40 **** Incremental Build of configuration Debug for project bootloader ****
+make all 
+make: Nothing to be done for `all'.
+
+19:00:40 Build Finished (took 173ms)
+

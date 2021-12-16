@@ -1,0 +1,12 @@
+NET axi_spi_0_SCK_pin LOC = "P70"  |  IOSTANDARD = "LVCMOS33";
+NET axi_spi_0_SS_pin  LOC = "P38"  |  IOSTANDARD = "LVCMOS33";
+NET axi_spi_0_MISO_pin LOC = "P65"  |  IOSTANDARD = "LVCMOS33";
+NET axi_spi_0_MOSI_pin LOC = "P64"  |  IOSTANDARD = "LVCMOS33";
+
+
+#NET axi_quad_spi_0_SCK_pin LOC = "P70"  |  IOSTANDARD = "LVCMOS33";
+#NET axi_quad_spi_0_SS_pin  LOC = "P38"  |  IOSTANDARD = "LVCMOS33";
+#NET axi_quad_spi_0_IO0_pin LOC = "P65"  |  IOSTANDARD = "LVCMOS33";
+#NET axi_quad_spi_0_IO1_pin LOC = "P64"  |  IOSTANDARD = "LVCMOS33";
+#NET axi_quad_spi_0_IO2_pin LOC = "P62"  |  IOSTANDARD = "LVCMOS33";
+#NET axi_quad_spi_0_IO3_pin LOC = "P61"  |  IOSTANDARD = "LVCMOS33";

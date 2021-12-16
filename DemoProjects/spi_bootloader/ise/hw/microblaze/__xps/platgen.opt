@@ -1,0 +1,2 @@
+ -p xc6slx9tqg144-2 -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -toplevel no -ti microblaze_i -msg __xps/ise/xmsgprops.lst
+

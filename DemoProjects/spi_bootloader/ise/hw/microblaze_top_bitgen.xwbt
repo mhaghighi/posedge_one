@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Mahdi\Desktop\spi_bootloader\hw\microblaze_top.ncd
+OUTFILE=C:\Users\Mahdi\Desktop\spi_bootloader\hw\microblaze_top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\Mahdi\Desktop\spi_bootloader\hw
+LICENSE=WebPack
+USER_INFO=_

@@ -1,0 +1,1 @@
+sends "hello world" on serial port(pins A16-B16)

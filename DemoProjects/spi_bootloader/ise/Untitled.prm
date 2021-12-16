@@ -1,0 +1,18 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\Mahdi\Desktop\spi_bootloader//Untitled -s 8192 -u 0000 C:/Users/Mahdi/Desktop/spi_bootloader/hw/microblaze_top.bit -data_file up 80000 C:/Users/Mahdi/Desktop/spi_bootloader/sw/hello/Debug/hello.srec -spi 
+
+PROM C:\Users\Mahdi\Desktop\spi_bootloader\Untitled.prm map: Thu Jun 22 15:36:14 2017
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          8192K
+PROM start    0000:0000
+PROM end      007f:ffff
+PROM checksum 7aa3e7f3
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Jun 22 15:33:18 2017 C:/Users/Mahdi/Desktop/spi_bootloader/hw/microblaze_top.bit
+    0008:0000    0008:1d13     Jun 22 15:30:50 2017 C:/Users/Mahdi/Desktop/spi_bootloader/sw/hello/Debug/hello.srec

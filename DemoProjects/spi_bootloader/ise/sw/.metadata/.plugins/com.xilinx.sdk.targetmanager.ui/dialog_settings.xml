@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="system.bit" key="microblaze_hw_platform-bitFile"/>
+	<item value="D:\Projects\Posedge\DemoProjects\spi_bootloader\spi_bootloader\sw\bootloader\Debug\bootloader.elf" key="microblaze_hw_platform-microblaze_0-initElf"/>
+	<item value="system_bd.bmm" key="microblaze_hw_platform-bmmFile"/>
+</section>

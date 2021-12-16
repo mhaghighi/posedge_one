@@ -1,0 +1,53 @@
+14:35:34.692 INFO  - Processing command line option -hwspec C:/Users/Mahdi/Desktop/spi_bootloader/hw/microblaze/SDK/SDK_Export/hw/microblaze.xml. 
+14:35:43.690 INFO  - Restoring global repository preferences: 
+		 D:\KernelAwareBSPRepository 
+14:36:51.483 INFO  - Successfully generated C:\Users\Mahdi\Desktop\spi_bootloader\sw\bootloader\src\lscript.ld. 
+14:36:51.484 INFO  - Applying linker script to all configurations of project bootloader. 
+14:36:51.487 INFO  - Setting rebuild state to true for all configurations of project bootloader. 
+14:38:05.640 INFO  - FPGA configured successfully with bitstream "C:/Users/Mahdi/Desktop/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+14:58:21.541 INFO  - Processor microblaze_0 will be used to program the selected flash controller. 
+14:59:04.392 INFO  - Converting 'microblaze' ELF file 'C:\Users\Mahdi\Desktop\spi_bootloader\sw\hello\Debug\hello.elf' into bootable SREC format. 
+14:59:04.503 INFO  - Caching converted image as 'C:\Users\Mahdi\Desktop\spi_bootloader\sw\microblaze_hw_platform\cache\hello.elf.srec'. 
+15:00:16.455 INFO  - Processor microblaze_0 will be used to program the selected flash controller. 
+15:12:41.029 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:30:56.452 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+15:31:14.637 INFO  - FPGA configured successfully with bitstream "C:/Users/Mahdi/Desktop/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+15:33:27.414 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:00:32.187 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/DemoProjects/spi_bootloader/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+19:00:52.868 ERROR - Port COM4 is already in use. 
+19:03:53.049 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:13:46.979 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/DemoProjects/spi_bootloader/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+19:14:11.439 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+19:14:17.198 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/DemoProjects/spi_bootloader/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+19:14:40.725 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+19:14:50.644 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+19:15:02.814 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/DemoProjects/spi_bootloader/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+19:15:09.245 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/DemoProjects/spi_bootloader/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+19:18:59.233 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/DemoProjects/spi_bootloader/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+19:59:25.935 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+00:47:51.360 INFO  - FPGA configured successfully with bitstream "D:/Projects/Posedge/DemoProjects/spi_bootloader/spi_bootloader/sw/microblaze_hw_platform/download.bit" 
+01:04:48.690 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

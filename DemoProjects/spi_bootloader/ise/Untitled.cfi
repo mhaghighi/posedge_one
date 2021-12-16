@@ -1,0 +1,12 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            06/22/2017 - 15:36
+SOURCE          C:\Users\Mahdi\Desktop\spi_bootloader\Untitled.mcs
+DEVICE          8192K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x7AA3E7F3
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "C:/Users/Mahdi/Desktop/spi_bootloader/hw/microblaze_top.bit" 6slx9tqg144
+START_ADDRESS   0x00080000 END_ADDRESS 0x00081D13 DIRECTION_UP   "C:/Users/Mahdi/Desktop/spi_bootloader/sw/hello/Debug/hello.srec" DATAFILE
