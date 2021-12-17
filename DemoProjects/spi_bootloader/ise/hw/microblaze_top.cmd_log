@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/Projects/Posedge/posedge_one_public/DemoProjects/spi_bootloader/ise/hw/microblaze_top.xst" -ofn "D:/Projects/Posedge/posedge_one_public/DemoProjects/spi_bootloader/ise/hw/microblaze_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Projects/Posedge/posedge_one_public/DemoProjects/spi_bootloader/ise/top.ucf -bm edkBmmFile.bmm -p xc6slx9-tqg144-2 microblaze_top.ngc microblaze_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o microblaze_top_map.ncd microblaze_top.ngd microblaze_top.pcf 
+par -w -intstyle ise -ol high -mt off microblaze_top_map.ncd microblaze_top.ncd microblaze_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml microblaze_top.twx microblaze_top.ncd -o microblaze_top.twr microblaze_top.pcf 
+bitgen -intstyle ise -f microblaze_top.ut microblaze_top.ncd 

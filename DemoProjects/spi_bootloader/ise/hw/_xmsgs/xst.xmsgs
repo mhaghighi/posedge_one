@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"D:/Projects/Posedge/posedge_one_public/DemoProjects/spi_bootloader/ise/hw/microblaze/hdl/microblaze.v" Line 5: Empty module &lt;<arg fmt="%s" index="1">microblaze</arg>&gt; remains a black box.
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">RS232_Uart_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_spi_0/bus2ip_reset_int_core</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi_spi_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi_spi_0/bus2ip_reset_int_core_1&gt; &lt;axi_spi_0/bus2ip_reset_int_core_2&gt; &lt;axi_spi_0/bus2ip_reset_int_core_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi_spi_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1&gt; &lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1&gt; &lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/cs_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/cs_out_i_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/bus2ip_wr_req_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/bus2ip_wr_req_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2_1&gt; &lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">RS232_Uart_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_spi_0/bus2ip_reset_int_core</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi_spi_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi_spi_0/bus2ip_reset_int_core_1&gt; &lt;axi_spi_0/bus2ip_reset_int_core_2&gt; &lt;axi_spi_0/bus2ip_reset_int_core_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi_spi_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1&gt; &lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1&gt; &lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/cs_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/cs_out_i_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/bus2ip_wr_req_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/bus2ip_wr_req_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2_1&gt; &lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">RS232_Uart_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_spi_0/bus2ip_reset_int_core</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi_spi_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi_spi_0/bus2ip_reset_int_core_1&gt; &lt;axi_spi_0/bus2ip_reset_int_core_2&gt; &lt;axi_spi_0/bus2ip_reset_int_core_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi_spi_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1&gt; &lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi4lite_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1&gt; &lt;axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2_1&gt; &lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd2_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/bus2ip_wr_req_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/bus2ip_wr_req_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/cs_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/OLD_LOGIC_GEN.AXI_EMC_ADDRESS_DECODE_INSTANCE_I/cs_out_i_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/AXI_EMC_NATIVE_INTERFACE_I/emc_addr_ps_FSM_FFd1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Generic_External_Memory</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Generic_External_Memory/EMC_CTRL_I/MEM_STATE_MACHINE_I/crnt_state_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

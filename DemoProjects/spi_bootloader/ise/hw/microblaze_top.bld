@@ -1,0 +1,218 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc
+D:/Projects/Posedge/posedge_one_public/DemoProjects/spi_bootloader/ise/top.ucf
+-bm edkBmmFile.bmm -p xc6slx9-tqg144-2 microblaze_top.ngc microblaze_top.ngd
+
+Reading NGO file
+"D:/Projects/Posedge/posedge_one_public/DemoProjects/spi_bootloader/ise/hw/micro
+blaze_top.ngc" ...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_rs232_uart_1_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_proc_sys_reset_0_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_clock_generator_0_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_axi_spi_0_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_ilmb_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_dlmb_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_axi4lite_0_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_i_bram_ctrl_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_d_bram_ctrl_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_debug_module_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_generic_external_memory_wrapper.ngc"...
+Loading design module
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_bram_block_wrapper.ngc"...
+Applying constraints in
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_ilmb_wrapper.ncf" to module
+"microblaze_i/microblaze_0_ilmb"...
+Checking Constraint Associations...
+Applying constraints in
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_dlmb_wrapper.ncf" to module
+"microblaze_i/microblaze_0_dlmb"...
+Checking Constraint Associations...
+Applying constraints in
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_axi4lite_0_wrapper.ncf" to module "microblaze_i/axi4lite_0"...
+Checking Constraint Associations...
+Applying constraints in
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze_microblaze_0_wrapper.ncf" to module "microblaze_i/microblaze_0"...
+Checking Constraint Associations...
+Applying constraints in
+"D:\Projects\Posedge\posedge_one_public\DemoProjects\spi_bootloader\ise\hw/micro
+blaze.ncf" to module "microblaze_i"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"D:/Projects/Posedge/posedge_one_public/DemoProjects/spi_bootloader/ise/top.ucf"
+...
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_1'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_2'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_3'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_4'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_5'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_6'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'microblaze_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_7'
+   of type RAMB16BWER has been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to
+   correct post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /microblaze_top/EXPANDED/microblaze_top/microblaze_i/axi4lite_0/axi4lite_0\/s
+   i_converter_bank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resy
+   nc<2>_inv1_INV_0 TNM = FFS:axi4lite_0_...>: No instances of type FFS were
+   found under block
+   "microblaze_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_
+   conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
+   PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC
+   TS_microblaze_i_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PERIOD
+   "microblaze_i_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0"
+   TS_sys_clk_pin * 4.166666667 HIGH 50%>
+
+Done...
+
+Processing BMM file "edkBmmFile.bmm" ...
+
+WARNING:NgdBuild:1440 - User specified non-default attribute value (41.666667)
+   was detected for the CLKIN1_PERIOD attribute on PLL
+   "clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst".  This does not
+   match the PERIOD constraint value (24000 KHz.).  The uncertainty calculation
+   will use the PERIOD constraint value.  This could result in incorrect
+   uncertainty calculated for PLL output clocks.
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_
+   I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_i/Generic_External_Memory/Generic_External_Memory/EMC_CTRL_I/ADDR
+   _COUNTER_MUX_I/ADDRESS_STORE_GEN[31].ADDRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_i/Generic_External_Memory/Generic_External_Memory/EMC_CTRL_I/ADDR
+   _COUNTER_MUX_I/ADDRESS_STORE_GEN[30].ADDRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_i/Generic_External_Memory/Generic_External_Memory/EMC_CTRL_I/MEM_
+   STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADDR_CNT_GEN.RDDATA_EN_GEN_ASYNC[3].RDDATA_
+   EN_REG_ASYNC' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_i/Generic_External_Memory/Generic_External_Memory/EMC_CTRL_I/MEM_
+   STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_i/Generic_External_Memory/Generic_External_Memory/EMC_CTRL_I/MEM_
+   STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[6].READ_COMPLETE_PIPE' has unconnected
+   output pin
+WARNING:NgdBuild:452 - logical net 'N16' has no driver
+WARNING:NgdBuild:452 - logical net 'N17' has no driver
+WARNING:NgdBuild:452 - logical net 'N18' has no driver
+WARNING:NgdBuild:452 - logical net 'N19' has no driver
+WARNING:NgdBuild:452 - logical net 'N20' has no driver
+WARNING:NgdBuild:452 - logical net 'N21' has no driver
+WARNING:NgdBuild:452 - logical net 'N22' has no driver
+WARNING:NgdBuild:452 - logical net 'N23' has no driver
+WARNING:NgdBuild:452 - logical net 'N24' has no driver
+WARNING:NgdBuild:452 - logical net 'N25' has no driver
+WARNING:NgdBuild:452 - logical net 'N26' has no driver
+WARNING:NgdBuild:452 - logical net 'N27' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  30
+
+Total memory usage is 173976 kilobytes
+
+Writing NGD file "microblaze_top.ngd" ...
+Total REAL time to NGDBUILD completion:  41 sec
+Total CPU time to NGDBUILD completion:   40 sec
+
+Writing NGDBUILD log file "microblaze_top.bld"...
